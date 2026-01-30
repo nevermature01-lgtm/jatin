@@ -8,15 +8,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Bath, BedDouble, MapPin, Search, Square } from 'lucide-react';
+import { Bath, BedDouble, MapPin, Square } from 'lucide-react';
 import { properties } from '@/lib/data';
 import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
@@ -30,10 +22,10 @@ export default function Home() {
           <HeroSlider />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4 animate-fade-in">
             <div className="animate-slide-up-slow">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline drop-shadow-2xl">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl">
                 Explore the World’s Finest Properties
               </h1>
-              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg">
+              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg mx-auto">
                 Your new life of elegance and comfort awaits among our curated collection of luxury homes.
               </p>
             </div>

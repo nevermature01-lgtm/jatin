@@ -23,7 +23,7 @@ const features = [
 
 export function WhyOurTeamStandsOut() {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative">
       <CircularTextLogo className="top-0 left-0 -mt-11 -ml-11 sm:-mt-14 sm:-ml-14" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">

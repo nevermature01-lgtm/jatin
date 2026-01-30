@@ -1,21 +1,36 @@
 'use client';
 
 import { LucideIcon } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface StatCardProps {
   icon: LucideIcon;
   value: string;
   label: string;
+  index: number;
 }
 
-export function StatCard({ icon: Icon, value, label }: StatCardProps) {
+export function StatCard({ icon: Icon, value, label, index }: StatCardProps) {
+  // Define different animation styles for a more random and premium feel.
+  const animationStyles = [
+    { class: 'animate-[spin_12s_linear_infinite]' },
+    { class: 'animate-[spin_15s_linear_infinite] [animation-direction:reverse]' },
+    { class: 'animate-[spin_10s_linear_infinite]' },
+    { class: 'animate-[spin_18s_linear_infinite] [animation-direction:reverse]' },
+  ];
+
+  const style = animationStyles[index % animationStyles.length];
+  
   return (
     // The main container for positioning and sizing
     <div className="relative w-36 h-36 sm:w-48 sm:h-48">
       
       {/* Animated fluid border */}
       <div className="absolute inset-0 rounded-2xl overflow-hidden">
-        <div className="absolute inset-[-100%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FFD700_0%,transparent_50%)] blur-xl opacity-75" />
+        <div className={cn(
+          "absolute inset-[-100%] bg-[conic-gradient(from_90deg_at_50%_50%,#FFD700_0%,transparent_50%)] blur-xl opacity-75",
+          style.class
+          )} />
       </div>
 
       {/* Glass tube container (the visible border) */}

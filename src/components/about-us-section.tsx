@@ -82,13 +82,14 @@ export function AboutUsSection() {
                   icon={stat.icon}
                   value={stat.value}
                   label={stat.label}
+                  index={index}
                 />
               </AnimatedGridItem>
             ))}
           </div>
         </div>
 
-        <div className="mt-16 rounded-lg bg-white/5 p-8 md:p-12 border border-white/10">
+        <div className="mt-16 rounded-lg bg-white/5 p-8 md:p-12 border border-white/10 backdrop-blur-sm">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <h2 className="text-4xl font-headline text-white text-center md:text-left">
                     Start Your Property<br />Search Now!

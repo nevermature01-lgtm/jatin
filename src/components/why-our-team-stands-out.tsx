@@ -24,7 +24,7 @@ const features = [
 export function WhyOurTeamStandsOut() {
   return (
     <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative overflow-visible">
-      <CircularTextLogo className="top-0 left-0 -mt-14 -ml-14 sm:-mt-11 sm:-ml-11" />
+      <CircularTextLogo className="top-0 left-0 -mt-20 -ml-14 sm:-mt-11 sm:-ml-11" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-4xl sm:text-5xl font-headline text-white mb-4">

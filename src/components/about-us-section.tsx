@@ -3,6 +3,7 @@
 import { Check, Award, Users, CalendarCheck, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { CircularText } from './circular-text';
 
 export function AboutUsSection() {
   const stats = [
@@ -73,20 +74,20 @@ export function AboutUsSection() {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-8 items-center justify-items-center lg:pt-10">
             {stats.map((stat, index) => (
-                <div key={index} className="group rounded-lg bg-white/10 p-6 text-center backdrop-blur-md border border-white/20 transition-all duration-300 hover:border-accent/30 hover:bg-white/15">
-                  <div className="flex justify-center mb-4">
-                      <stat.icon className="h-10 w-10 text-accent drop-shadow-[0_1px_2px_hsl(var(--accent)/0.7)] transition-transform duration-300 group-hover:scale-110" />
-                  </div>
-                  <p className="text-4xl font-headline text-white mb-2">{stat.value}</p>
-                  <p className="text-base text-neutral-300">{stat.label}</p>
-                </div>
+              <CircularText
+                key={index}
+                icon={stat.icon}
+                value={stat.value}
+                label={stat.label}
+                index={index}
+              />
             ))}
           </div>
         </div>
 
-        <div className="mt-16 rounded-lg bg-white/10 p-8 md:p-12 backdrop-blur-md border border-white/20">
+        <div className="mt-16 rounded-lg bg-white/5 p-8 md:p-12 border border-white/10">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <h2 className="text-4xl font-headline text-white text-center md:text-left">
                     Start Your Property<br />Search Now!

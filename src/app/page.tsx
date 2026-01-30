@@ -9,6 +9,7 @@ import { MovingRibbon } from '@/components/moving-ribbon';
 import { TrendingSlider } from '@/components/trending-slider';
 import { ServicesSection } from '@/components/services-section';
 import { AboutUsSection } from '@/components/about-us-section';
+import { WhyOurTeamStandsOut } from '@/components/why-our-team-stands-out';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -58,6 +59,7 @@ export default function Home() {
         </section>
         <ServicesSection />
         <AboutUsSection />
+        <WhyOurTeamStandsOut />
       </main>
     </div>
   );

@@ -50,13 +50,13 @@ export function ServicesSection() {
             </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-neutral-700">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-white/20">
           {services.map((service, index) => (
             <AnimatedGridItem
               key={service.title}
               index={index}
-              className={`group p-6 sm:p-8 border-b border-neutral-700 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-gray-800
-                ${ index % 3 !== 2 ? 'md:border-r md:border-neutral-700' : '' } 
+              className={`group p-6 sm:p-8 border-b border-white/20 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-gray-800
+                ${ index % 3 !== 2 ? 'md:border-r md:border-white/20' : '' } 
                 ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
             >
               <ServiceCard {...service} />

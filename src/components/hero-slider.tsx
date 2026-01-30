@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils';
 
 export function HeroSlider() {
   const heroImages = PlaceHolderImages.filter(img => 
-    ['hero-background', 'property-1', 'property-3', 'property-5'].includes(img.id)
+    ['property-1', 'property-3', 'property-5'].includes(img.id)
   );
   
   const plugin = React.useRef(

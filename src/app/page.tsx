@@ -34,7 +34,7 @@ export default function Home() {
                 Your new life of elegance and comfort awaits among our curated collection of luxury homes.
               </p>
             </div>
-            <Button asChild variant="outline" className="rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:hidden absolute bottom-32">
+            <Button asChild variant="outline" className="rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:hidden absolute bottom-36">
               <Link href="#">
                 Contact us
               </Link>

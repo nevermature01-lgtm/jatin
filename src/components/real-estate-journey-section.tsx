@@ -52,11 +52,6 @@ export function RealEstateJourneySection() {
                   Contact Us &gt;
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/80 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm rounded-sm px-6 py-6 text-base">
-                <Link href="#">
-                  View Listings &gt;
-                </Link>
-              </Button>
             </div>
           </div>
         </div>

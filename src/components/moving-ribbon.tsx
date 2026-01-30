@@ -4,14 +4,12 @@ import React from 'react';
 
 const RibbonContent = () => {
     const items = [
-        'Luxury Villas', ' • ',
-        'Penthouse Collection', ' • ',
-        'Waterfront Estates', ' • ',
-        'Private Islands', ' • ',
-        'Equestrian Properties', ' • ',
-        'Historic Manors', ' • ',
-        'Urban Lofts', ' • ',
-        'Mountain Retreats', ' • ',
+        'LANDMARKLANE', ' • ',
+        'Dholera', ' • ',
+        'Noida', ' • ',
+        'Vrindavan', ' • ',
+        'Agra', ' • ',
+        'LANDMARKLANE', ' • ',
       ];
     return (
         <>

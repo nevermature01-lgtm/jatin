@@ -10,20 +10,8 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const mainNavLinks = [
     { href: '/', label: 'Home' },
     { href: '#', label: 'About us' },
@@ -49,21 +37,14 @@ export function Header() {
   ];
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 z-50 w-full transition-all duration-300 ease-in-out',
-        isScrolled
-          ? 'bg-background/95 backdrop-blur-sm'
-          : 'bg-gradient-to-b from-black/60 to-transparent'
-      )}
-    >
+    <header className="absolute top-0 z-50 w-full bg-gradient-to-b from-black/60 to-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between gap-4">
           <div className="flex items-center gap-2 md:gap-6">
             {/* Mobile Menu */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className={cn("md:hidden", isScrolled ? 'text-foreground' : 'text-white')}>
+                <Button variant="ghost" size="icon" className="text-white md:hidden">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
@@ -94,22 +75,22 @@ export function Header() {
             </Sheet>
             
             <Link href="/" className="flex items-center space-x-2">
-              <span className={cn('font-bold text-2xl font-headline tracking-wider transition-colors', isScrolled ? 'text-foreground' : 'text-white')}>
+              <span className="font-bold text-2xl font-headline tracking-wider text-white transition-colors">
                 LANDMARKLANE
               </span>
             </Link>
           </div>
 
-          <nav className="hidden md:flex flex-1 items-center justify-center space-x-8 text-sm font-medium">
+          <nav className="hidden flex-1 items-center justify-center space-x-8 text-sm font-medium md:flex">
             {mainNavLinks.map(link => (
-              <Link key={link.label} href={link.href} className={cn('flex items-center transition-colors hover:opacity-100', isScrolled ? 'text-foreground/80 hover:text-foreground' : 'text-white/80')}>
+              <Link key={link.label} href={link.href} className="flex items-center text-white/80 transition-colors hover:opacity-100">
                 {link.label}
               </Link>
             ))}
           </nav>
 
           <div className="flex items-center justify-end">
-            <Button asChild variant="outline" className={cn('hidden md:inline-flex rounded-full transition-colors font-body', isScrolled ? 'border-primary/50 text-primary hover:bg-primary/10' : 'border-white/50 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm')}>
+            <Button asChild variant="outline" className="hidden rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:inline-flex">
               <Link href="#">
                 Contact us
               </Link>
@@ -117,13 +98,13 @@ export function Header() {
           </div>
         </div>
       </div>
-      <Separator className={cn('transition-colors', isScrolled ? 'bg-border' : 'bg-white/20')} />
+      <Separator className="bg-white/20" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-12 items-center justify-center overflow-hidden">
-            <nav className="w-full overflow-x-auto whitespace-nowrap text-center [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <nav className="w-full overflow-x-auto whitespace-nowrap text-center [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div className="inline-flex items-center space-x-8 px-4 text-sm font-medium">
                 {countryNavLinks.map(link => (
-                    <Link key={link.label} href={link.href} className={cn('transition-colors hover:opacity-100', isScrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/80')}>
+                    <Link key={link.label} href={link.href} className="text-white/80 transition-colors hover:opacity-100">
                         {link.label}
                     </Link>
                 ))}
@@ -131,7 +112,7 @@ export function Header() {
             </nav>
         </div>
       </div>
-      <Separator className={cn('transition-colors', isScrolled ? 'bg-border' : 'bg-white/20')} />
+      <Separator className="bg-white/20" />
     </header>
   );
 }

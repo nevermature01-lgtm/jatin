@@ -4,6 +4,7 @@ export type ImagePlaceholder = {
   id: string;
   description: string;
   imageUrl: string;
+  mobileImageUrl?: string;
   imageHint: string;
 };
 

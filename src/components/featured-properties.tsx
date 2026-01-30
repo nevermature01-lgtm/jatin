@@ -25,17 +25,15 @@ export function FeaturedProperties() {
         </Link>
       </div>
 
-      <ScrollStack>
-        {featuredProperties.map((property) => (
-          <ScrollStackItem key={property.id} className="container mx-auto px-4">
-            <div className="mx-auto max-w-3xl">
-              <div className="rounded-lg bg-card p-2 shadow-lg shadow-gray-200/50">
-                <PropertyCard property={property} />
-              </div>
-            </div>
-          </ScrollStackItem>
-        ))}
-      </ScrollStack>
+      <div className="container mx-auto">
+        <ScrollStack useWindowScroll={true}>
+          {featuredProperties.map((property) => (
+            <ScrollStackItem key={property.id} itemClassName="max-w-3xl mx-auto">
+              <PropertyCard property={property} />
+            </ScrollStackItem>
+          ))}
+        </ScrollStack>
+      </div>
     </section>
   );
 }

@@ -9,7 +9,7 @@ import { formatInr } from '@/lib/utils';
 export function PropertyCard({ property }: { property: Property }) {
   return (
     <div className="group w-full cursor-pointer">
-        <div className="relative overflow-hidden rounded-md">
+        <div className="relative overflow-hidden">
             <Image
                 src={property.image.imageUrl}
                 alt={property.title}
@@ -29,7 +29,7 @@ export function PropertyCard({ property }: { property: Property }) {
                 </Button>
             </div>
         </div>
-        <div className="space-y-1 pt-4">
+        <div className="space-y-1 p-4">
             <p className="text-lg font-bold text-gray-900">
                 {formatInr(property.price)}
             </p>

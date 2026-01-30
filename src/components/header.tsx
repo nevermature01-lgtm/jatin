@@ -75,10 +75,10 @@ export function Header() {
               </SheetTrigger>
               <SheetContent
                 side="left"
-                className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/70 p-0 backdrop-blur-xl border border-white/20 data-[state=open]:slide-in-from-top-5 data-[state=closed]:slide-out-to-top-5"
+                className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/70 p-0 backdrop-blur-xl border border-white/20 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-top-5 data-[state=open]:slide-in-from-top-5"
               >
                 <div className="flex flex-col">
-                    <SheetHeader className="p-6 pb-4">
+                    <SheetHeader className="p-6 pb-4 pr-12">
                       <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
                       <SheetDescription className="sr-only">
                         Select a link to navigate to a different page.

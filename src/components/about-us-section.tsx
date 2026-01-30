@@ -15,17 +15,17 @@ export function AboutUsSection() {
   }
 
   return (
-    <section className="py-16 sm:py-24 bg-background">
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+            <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
               ABOUT US
             </p>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-foreground mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-white mb-8">
               Blending Modern Design and Tradition to <em className="italic">Build Your Future</em>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base text-muted-foreground mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base text-neutral-300 mb-10">
               <p>
                 At LANDMARKLANE, we redefine living spaces with innovative designs and unparalleled expertise. Our passion lies in creating homes that inspire. With a commitment to quality and customer satisfaction.
               </p>
@@ -35,14 +35,14 @@ export function AboutUsSection() {
             </div>
 
             <div className="mb-10">
-              <h3 className="text-2xl font-headline text-foreground mb-4">Our Vision</h3>
-              <p className="text-base text-muted-foreground">
+              <h3 className="text-2xl font-headline text-white mb-4">Our Vision</h3>
+              <p className="text-base text-neutral-300">
                 To be the leading real estate brand, redefining modern living by creating spaces that inspire, empower, and elevate lifestyles.
               </p>
             </div>
 
             <div className="mb-10">
-              <h3 className="text-2xl font-headline text-foreground mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-headline text-white mb-4">Our Mission</h3>
               <ul className="space-y-3">
                 {[
                   'Connecting people with perfect properties',
@@ -53,7 +53,7 @@ export function AboutUsSection() {
                 ].map((mission) => (
                   <li key={mission} className="flex items-start">
                     <Check className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-muted-foreground">{mission}</span>
+                    <span className="text-neutral-300">{mission}</span>
                   </li>
                 ))}
               </ul>
@@ -72,7 +72,7 @@ export function AboutUsSection() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-lg bg-gray-900 p-8 md:p-12">
+        <div className="mt-16 rounded-lg bg-gray-800/50 p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <h2 className="text-4xl font-headline text-white text-center md:text-left">
                     Start Your Property<br />Search Now!

@@ -8,7 +8,7 @@ export function PropertyCard({ property }: { property: Property }) {
   return (
     <Card className="w-full overflow-hidden border-none shadow-none bg-transparent">
       <CardContent className="p-0">
-        <div className="relative group aspect-[4/5] overflow-hidden rounded-lg">
+        <div className="relative group aspect-[4/3] overflow-hidden rounded-lg">
           <Image
             src={property.image.imageUrl}
             alt={property.title}

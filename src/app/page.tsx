@@ -1,22 +1,11 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Bath, BedDouble, MapPin, Square } from 'lucide-react';
-import { properties } from '@/lib/data';
 import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
-import { FeaturedProperties } from '@/components/featured-properties';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,7 +33,6 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
-        <FeaturedProperties />
       </main>
     </div>
   );

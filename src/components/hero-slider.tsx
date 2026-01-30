@@ -11,7 +11,11 @@ import Autoplay from 'embla-carousel-autoplay';
 import React, { useCallback, useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
-export function HeroSlider() {
+export function HeroSlider({
+  onSlideChange,
+}: {
+  onSlideChange?: (index: number) => void;
+}) {
   const desktopImages = [
     { id: 'd1', src: '/desktop_1.webp', alt: 'Modern villa with a pool', hint: 'modern villa' },
     { id: 'd2', src: '/desktop_2.webp', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
@@ -50,9 +54,11 @@ export function HeroSlider() {
     setCurrent(api.selectedScrollSnap());
 
     api.on('select', () => {
-      setCurrent(api.selectedScrollSnap());
+      const newIndex = api.selectedScrollSnap();
+      setCurrent(newIndex);
+      onSlideChange?.(newIndex);
     });
-  }, [api]);
+  }, [api, onSlideChange]);
 
   return (
     <div className="absolute inset-0 overflow-hidden">
@@ -69,8 +75,8 @@ export function HeroSlider() {
             <CarouselContent>
                 {heroImages.map((images, index) => {
                     return (
-                        <CarouselItem key={images.desktop.id}>
-                            <div className="w-full h-screen relative overflow-hidden">
+                        <CarouselItem key={images.desktop.id} className="overflow-hidden">
+                            <div className="w-full h-screen relative">
                                 {/* Desktop Image */}
                                 <Image
                                     src={images.desktop.src}

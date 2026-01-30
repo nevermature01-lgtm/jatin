@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -12,16 +14,19 @@ import { Bath, BedDouble, MapPin, Square } from 'lucide-react';
 import { properties } from '@/lib/data';
 import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
+import { useState } from 'react';
 
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
         <section className="relative h-screen w-full">
-          <HeroSlider />
+          <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
-            <div>
+            <div key={currentSlide}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl animate-fade-in animate-slide-up-slow">
                 Explore the World’s Finest Properties
               </h1>

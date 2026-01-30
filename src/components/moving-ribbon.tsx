@@ -10,6 +10,12 @@ const RibbonContent = () => {
         'Vrindavan', ' • ',
         'Agra', ' • ',
         'LANDMARKLANE', ' • ',
+        'LANDMARKLANE', ' • ',
+        'Dholera', ' • ',
+        'Noida', ' • ',
+        'Vrindavan', ' • ',
+        'Agra', ' • ',
+        'LANDMARKLANE', ' • ',
       ];
     return (
         <>

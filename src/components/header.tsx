@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, User, ChevronDown } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -25,9 +25,10 @@ export function Header() {
   }, []);
 
   const mainNavLinks = [
-    { href: '#', label: 'Just for You' },
-    { href: '#', label: 'Sell', withDropdown: true },
-    { href: '#', label: 'Find Agencies' },
+    { href: '/', label: 'Home' },
+    { href: '#', label: 'About us' },
+    { href: '#', label: 'Leadership' },
+    { href: '#properties', label: 'Properties' },
   ];
 
   const countryNavLinks = [
@@ -84,7 +85,6 @@ export function Header() {
                           <SheetClose asChild key={link.label}>
                             <Link href={link.href} className="flex items-center py-2 text-lg font-medium text-foreground/80 hover:text-foreground">
                               {link.label}
-                              {link.withDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
                             </Link>
                           </SheetClose>
                       ))}
@@ -104,7 +104,6 @@ export function Header() {
             {mainNavLinks.map(link => (
               <Link key={link.label} href={link.href} className={cn('flex items-center transition-colors hover:opacity-100', isScrolled ? 'text-foreground/80 hover:text-foreground' : 'text-white/80')}>
                 {link.label}
-                {link.withDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
               </Link>
             ))}
           </nav>

@@ -75,7 +75,7 @@ export function AboutUsSection() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pt-10">
             {stats.map((stat, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-lg p-6 text-center flex flex-col items-center justify-center">
+                <div key={index} className="bg-white/10 rounded-lg p-6 text-center flex flex-col items-center justify-center backdrop-blur-md border border-white/20">
                 <div className="flex justify-center mb-4">
                     <div className="bg-accent rounded-full p-3">
                     <stat.icon className="h-8 w-8 text-accent-foreground" />
@@ -88,7 +88,7 @@ export function AboutUsSection() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-lg bg-gray-800/50 p-8 md:p-12">
+        <div className="mt-16 rounded-lg bg-white/10 p-8 md:p-12 backdrop-blur-md border border-white/20">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <h2 className="text-4xl font-headline text-white text-center md:text-left">
                     Start Your Property<br />Search Now!

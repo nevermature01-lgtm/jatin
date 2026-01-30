@@ -33,6 +33,13 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-center mb-12">
+              Quick check
+            </h2>
+          </div>
+        </section>
       </main>
     </div>
   );

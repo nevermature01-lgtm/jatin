@@ -8,16 +8,26 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import React, { useCallback, useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 export function HeroSlider() {
-  const heroImages = PlaceHolderImages.filter(img => 
-    ['property-1', 'property-3', 'property-5'].includes(img.id)
-  );
-  
-  const reversedHeroImages = [...heroImages].reverse();
+  const desktopImages = [
+    { id: 'd1', src: '/desktop_1.jpg', alt: 'Modern villa with a pool', hint: 'modern villa' },
+    { id: 'd2', src: '/desktop_2.jpg', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
+    { id: 'd3', src: '/desktop_3.jpg', alt: 'Beachfront property with ocean view', hint: 'beach house' },
+  ];
+
+  const mobileImages = [
+    { id: 'm1', src: '/mob_1.jpg', alt: 'Modern villa with a pool', hint: 'modern villa' },
+    { id: 'm2', src: '/mob_2.jpg', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
+    { id: 'm3', src: '/mob_3.jpg', alt: 'Beachfront property with ocean view', hint: 'beach house' },
+  ].reverse();
+
+  const heroImages = desktopImages.map((desktopImage, index) => ({
+      desktop: desktopImage,
+      mobile: mobileImages[index]
+  }));
 
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
@@ -57,28 +67,28 @@ export function HeroSlider() {
             onMouseLeave={plugin.current.reset}
         >
             <CarouselContent>
-                {heroImages.map((image, index) => {
-                    const mobileImage = reversedHeroImages[index];
+                {heroImages.map((images, index) => {
                     return (
-                        <CarouselItem key={image.id}>
+                        <CarouselItem key={images.desktop.id}>
                             <div className="w-full h-screen relative">
                                 {/* Desktop Image */}
                                 <Image
-                                    src={image.imageUrl}
-                                    alt={image.description}
+                                    src={images.desktop.src}
+                                    alt={images.desktop.alt}
                                     fill
                                     className="object-cover animate-zoom-in hidden md:block"
-                                    data-ai-hint={image.imageHint}
+                                    priority={index === 0}
+                                    data-ai-hint={images.desktop.hint}
                                     sizes="100vw"
                                 />
                                 {/* Mobile Image */}
                                 <Image
-                                    src={mobileImage.mobileImageUrl || mobileImage.imageUrl}
-                                    alt={mobileImage.description}
+                                    src={images.mobile.src}
+                                    alt={images.mobile.alt}
                                     fill
                                     className="object-cover animate-zoom-in md:hidden"
-                                    priority={index === 0}
-                                    data-ai-hint={mobileImage.imageHint}
+                                    priority={false}
+                                    data-ai-hint={images.mobile.hint}
                                     sizes="100vw"
                                 />
                             </div>

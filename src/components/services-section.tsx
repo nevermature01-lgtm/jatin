@@ -52,7 +52,7 @@ export function ServicesSection() {
             </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-white/20">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-l border-r border-white/20">
           {services.map((service, index) => (
             <AnimatedGridItem
               key={service.title}

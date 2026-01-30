@@ -4,12 +4,14 @@ import React from 'react';
 
 const RibbonContent = () => {
     const items = [
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
-        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'Luxury Villas', ' • ', 'Penthouse Collection', ' • ', 'Waterfront Estates', ' • ', 'Private Islands', ' • ', 'Equestrian Properties', ' • ', 'Historic Manors', ' • ', 'Urban Lofts', ' • ', 'Mountain Retreats', ' • ',
+        'Refine until it feels editorial, luxury, and premium', ' • ',
+        'Luxury Villas', ' • ', 'Penthouse Collection', ' • ', 'Waterfront Estates', ' • ', 'Private Islands', ' • ', 'Equestrian Properties', ' • ', 'Historic Manors', ' • ', 'Urban Lofts', ' • ', 'Mountain Retreats', ' • ',
+        'Refine until it feels editorial, luxury, and premium', ' • ',
+        'Luxury Villas', ' • ', 'Penthouse Collection', ' • ', 'Waterfront Estates', ' • ', 'Private Islands', ' • ', 'Equestrian Properties', ' • ', 'Historic Manors', ' • ', 'Urban Lofts', ' • ', 'Mountain Retreats', ' • ',
+        'Refine until it feels editorial, luxury, and premium', ' • ',
+        'Luxury Villas', ' • ', 'Penthouse Collection', ' • ', 'Waterfront Estates', ' • ', 'Private Islands', ' • ', 'Equestrian Properties', ' • ', 'Historic Manors', ' • ', 'Urban Lofts', ' • ', 'Mountain Retreats', ' • ',
+        'Refine until it feels editorial, luxury, and premium', ' • ',
       ];
     return (
         <>

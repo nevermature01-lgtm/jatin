@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex min-h-screen w-screen flex-col bg-background">
       <Header />
       <main className="flex-1 w-screen">
-        <section className="relative w-screen h-[95vh]">
+        <section className="relative w-screen h-[95vh] overflow-x-hidden">
           <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
             <div key={currentSlide}>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
-        <section className="py-16 sm:py-24 bg-card">
+        <section className="py-16 sm:py-24 bg-amber-300">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-1">

@@ -116,7 +116,7 @@ export default {
         'fade-in': 'fade-in 1s ease-out forwards',
         'slide-up-slow': 'slide-up-slow 1s ease-out 0.2s forwards',
         'slide-up-fast': 'slide-up-fast 0.8s ease-out 0.5s forwards',
-        marquee: 'marquee 5s linear infinite',
+        marquee: 'marquee 20s linear infinite',
       },
     },
   },

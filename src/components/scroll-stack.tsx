@@ -297,26 +297,32 @@ const ScrollStack: FC<{
     };
   }, [itemDistance, useWindowScroll, setupLenis, updateCardTransforms]);
 
-  const containerStyles: React.CSSProperties = {
-      ...(useWindowScroll
-      ? {
-          // No specific styles needed for window scroll
+  const containerStyles: React.CSSProperties = useWindowScroll
+    ? {
+        overscrollBehavior: 'contain',
+        transform: 'translateZ(0)',
       }
     : {
         height: '100%',
         overflowY: 'auto',
         overflowX: 'visible',
-      }),
-      position: 'relative'
-  };
+        overscrollBehavior: 'contain',
+        scrollBehavior: 'smooth',
+        transform: 'translateZ(0)',
+        willChange: 'scroll-position',
+      };
 
   return (
     <div
       ref={scrollerRef}
-      className={cn(className)}
+      className={cn(
+        'relative w-full',
+        !useWindowScroll && 'h-full',
+        className
+      )}
       style={containerStyles}
     >
-      <div className="scroll-stack-inner relative pt-[20vh] pb-[50rem] min-h-screen">
+      <div className="scroll-stack-inner relative pt-[20vh] px-4 sm:px-8 md:px-12 lg:px-20 pb-[50rem] min-h-screen">
         {children}
         <div className="scroll-stack-end w-full h-px" />
       </div>

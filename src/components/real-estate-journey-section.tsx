@@ -38,9 +38,9 @@ export function RealEstateJourneySection() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center w-full text-center md:text-left">
           {/* Left Side */}
-          <div className="flex flex-col items-start gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <p className="text-sm font-bold tracking-widest uppercase">
               Discover More
             </p>
@@ -66,7 +66,7 @@ export function RealEstateJourneySection() {
           </div>
 
           {/* Right Side */}
-          <div className="flex flex-col items-start gap-8 md:pl-16">
+          <div className="flex flex-col items-center md:items-start gap-8 md:pl-16">
             <p className="text-lg text-neutral-200 max-w-md">
               Begin your property search now and access exclusive listings,
               expert advice, and personalized recommendations for your perfect

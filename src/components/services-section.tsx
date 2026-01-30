@@ -1,6 +1,5 @@
 import { Home, Building2, Landmark, UserCog, SearchCheck, Tag } from 'lucide-react';
 import { ServiceCard } from './service-card';
-import { Separator } from './ui/separator';
 
 const services = [
   {
@@ -50,24 +49,18 @@ export function ServicesSection() {
             </h2>
         </div>
 
-        <Separator className="bg-neutral-300" />
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          {services.slice(0, 3).map((service, index) => (
-            <div key={service.title} className={`p-8 ${index < 2 ? 'md:border-r md:border-neutral-300' : ''}`}>
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-neutral-300">
+          {services.map((service, index) => (
+            <div
+              key={service.title}
+              className={`p-6 sm:p-8 border-b border-neutral-300 
+                ${ index % 3 !== 2 ? 'md:border-r md:border-neutral-300' : '' } 
+                ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
+            >
               <ServiceCard {...service} />
             </div>
           ))}
         </div>
-
-        <Separator className="bg-neutral-300" />
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          {services.slice(3, 6).map((service, index) => (
-            <div key={service.title} className={`p-8 ${index < 2 ? 'md:border-r md:border-neutral-300' : ''}`}>
-              <ServiceCard {...service} />
-            </div>
-          ))}
-        </div>
-        <Separator className="bg-neutral-300" />
       </div>
     </section>
   );

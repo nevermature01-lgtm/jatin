@@ -3,7 +3,7 @@
     {
       "id": "property-1",
       "description": "Modern villa with a pool",
-      "imageUrl": "https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk3MTYyMDR8MA&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "/desktop_1.jpg",
       "mobileImageUrl": "/mob_1.jpg",
       "imageHint": "modern villa"
     },
@@ -16,7 +16,7 @@
     {
       "id": "property-3",
       "description": "Downtown penthouse apartment",
-      "imageUrl": "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2OTcwMDIzNHww&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "/desktop_2.jpg",
       "mobileImageUrl": "/mob_2.jpg",
       "imageHint": "luxury apartment"
     },
@@ -29,7 +29,7 @@
     {
       "id": "property-5",
       "description": "Beachfront property with ocean view",
-      "imageUrl": "https://images.unsplash.com/photo-1528913775512-624d24b27b96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTY5MDA4Mnww&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "/desktop_3.jpg",
       "mobileImageUrl": "/mob_3.jpg",
       "imageHint": "beach house"
     },

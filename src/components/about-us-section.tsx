@@ -74,7 +74,7 @@ export function AboutUsSection() {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-8 items-center justify-items-center lg:pt-10">
+          <div className="grid grid-cols-2 gap-y-16 gap-x-8 items-center justify-items-center lg:pt-10">
             {stats.map((stat, index) => (
               <CircularText
                 key={index}

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { AnimatedGridItem } from './animated-grid-item';
 import { StatCard } from './stat-card';
+import { CircularTextLogo } from './circular-text-logo';
 
 export function AboutUsSection() {
   const stats = [
@@ -31,8 +32,9 @@ export function AboutUsSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative">
+      <CircularTextLogo />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">

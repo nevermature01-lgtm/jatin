@@ -126,6 +126,7 @@ export default {
         'slide-up-fast': 'slide-up-fast 0.8s ease-out 0.5s forwards',
         marquee: 'marquee 5s linear infinite',
         'bg-pan-smoke': 'bg-pan-smoke 20s ease-in-out infinite',
+        'spin-slow': 'spin 20s linear infinite',
       },
     },
   },

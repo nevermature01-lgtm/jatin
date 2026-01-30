@@ -27,9 +27,9 @@ export function StatCard({ icon: Icon, value, label, index }: StatCardProps) {
       {/* Animated fluid border */}
       <div className="absolute inset-0 rounded-2xl overflow-hidden">
         <div className={cn(
-          "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,theme(colors.accent),transparent_40%),radial-gradient(circle_at_80%_20%,theme(colors.accent),transparent_40%)] blur-2xl opacity-75 animate-bg-pan-smoke [background-size:400%_400%]",
+          "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,theme(colors.accent),transparent_50%),radial-gradient(circle_at_80%_20%,theme(colors.accent),transparent_50%)] blur-2xl opacity-90 animate-bg-pan-smoke [background-size:400%_400%]",
           animationDirection
-          )} style={{ animationDuration: `${20 + index * 5}s` }}/>
+          )} style={{ animationDuration: `${15 + index * 5}s` }}/>
       </div>
 
       {/* Glass tube container (the visible border) */}

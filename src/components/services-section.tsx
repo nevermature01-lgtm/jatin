@@ -53,7 +53,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`p-6 sm:p-8 border-b border-neutral-300 
+              className={`group p-6 sm:p-8 border-b border-neutral-300 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-card
                 ${ index % 3 !== 2 ? 'md:border-r md:border-neutral-300' : '' } 
                 ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
             >

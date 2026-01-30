@@ -27,10 +27,10 @@ export default function Home() {
           <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
             <div key={currentSlide}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl animate-fade-in animate-slide-up-slow">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl animate-fade-in animate-slide-up-slow">
                 Explore the World’s Finest Properties
               </h1>
-              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg mx-auto animate-fade-in animate-slide-up-fast">
+              <p className="mt-4 max-w-2xl text-base md:text-lg lg:text-xl font-body drop-shadow-lg mx-auto animate-fade-in animate-slide-up-fast">
                 Your new life of elegance and comfort awaits among our curated collection of luxury homes.
               </p>
             </div>

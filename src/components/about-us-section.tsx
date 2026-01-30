@@ -4,6 +4,7 @@ import { Check, Award, Users, CalendarCheck, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { CircularText } from './circular-text';
+import { AnimatedGridItem } from './animated-grid-item';
 
 export function AboutUsSection() {
   const stats = [
@@ -76,13 +77,14 @@ export function AboutUsSection() {
           </div>
           <div className="grid grid-cols-2 gap-y-16 gap-x-8 items-center justify-items-center lg:pt-10">
             {stats.map((stat, index) => (
-              <CircularText
-                key={index}
-                icon={stat.icon}
-                value={stat.value}
-                label={stat.label}
-                index={index}
-              />
+              <AnimatedGridItem key={index} index={index}>
+                <CircularText
+                  icon={stat.icon}
+                  value={stat.value}
+                  label={stat.label}
+                  index={index}
+                />
+              </AnimatedGridItem>
             ))}
           </div>
         </div>

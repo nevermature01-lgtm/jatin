@@ -20,7 +20,7 @@ export function HeroSlider({
     { id: 'd1', src: '/desktop_1.webp', alt: 'Modern villa with a pool', hint: 'modern villa' },
     { id: 'd2', src: '/desktop_2.webp', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
     { id: 'd3', src: '/desktop_3.webp', alt: 'Beachfront property with ocean view', hint: 'beach house' },
-  ];
+  ].reverse();
 
   const mobileImages = [
     { id: 'm1', src: '/mob_1.jpg', alt: 'Modern villa with a pool', hint: 'modern villa' },

@@ -3,27 +3,27 @@
     {
       "id": "property-1",
       "description": "Modern villa with a pool",
-      "imageUrl": "/desktop_1.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1670589953903-b4e2f17a70a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk3MTYyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "mobileImageUrl": "/mob_1.jpg",
       "imageHint": "modern villa"
     },
     {
       "id": "property-2",
       "description": "Cozy suburban house",
-      "imageUrl": "https://images.unsplash.com/photo-1625603736199-775425d2890a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "https://images.unsplash.com/photo-1721149122657-7b5440f39160?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "suburban house"
     },
     {
       "id": "property-3",
       "description": "Downtown penthouse apartment",
-      "imageUrl": "/desktop_2.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2OTcwMDIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "mobileImageUrl": "/mob_2.jpg",
       "imageHint": "luxury apartment"
     },
     {
       "id": "property-4",
       "description": "Spacious family home with garden",
-      "imageUrl": "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTY5MjM4M3ww&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTY5MjM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "family home"
     },
     {

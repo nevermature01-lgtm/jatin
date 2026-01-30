@@ -108,6 +108,14 @@ export default {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-50%)' },
         },
+        'bg-pan-smoke': {
+          '0%': { backgroundPosition: '10% 0%' },
+          '20%': { backgroundPosition: '80% 20%' },
+          '40%': { backgroundPosition: '20% 70%' },
+          '60%': { backgroundPosition: '90% 90%' },
+          '80%': { backgroundPosition: '40% 50%' },
+          '100%': { backgroundPosition: '10% 0%' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -117,6 +125,7 @@ export default {
         'slide-up-slow': 'slide-up-slow 1s ease-out 0.2s forwards',
         'slide-up-fast': 'slide-up-fast 0.8s ease-out 0.5s forwards',
         marquee: 'marquee 5s linear infinite',
+        'bg-pan-smoke': 'bg-pan-smoke 20s ease-in-out infinite',
       },
     },
   },

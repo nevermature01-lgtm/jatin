@@ -11,15 +11,14 @@ interface StatCardProps {
 }
 
 export function StatCard({ icon: Icon, value, label, index }: StatCardProps) {
-  // Define different animation styles for a more random and premium feel.
-  const animationStyles = [
-    { class: 'animate-[spin_12s_linear_infinite]' },
-    { class: 'animate-[spin_15s_linear_infinite] [animation-direction:reverse]' },
-    { class: 'animate-[spin_10s_linear_infinite]' },
-    { class: 'animate-[spin_18s_linear_infinite] [animation-direction:reverse]' },
+  const animationDirections = [
+    '',
+    '[animation-direction:reverse]',
+    '',
+    '[animation-direction:reverse]',
   ];
 
-  const style = animationStyles[index % animationStyles.length];
+  const animationDirection = animationDirections[index % animationDirections.length];
   
   return (
     // The main container for positioning and sizing
@@ -28,9 +27,9 @@ export function StatCard({ icon: Icon, value, label, index }: StatCardProps) {
       {/* Animated fluid border */}
       <div className="absolute inset-0 rounded-2xl overflow-hidden">
         <div className={cn(
-          "absolute inset-[-100%] bg-[conic-gradient(from_90deg_at_50%_50%,#FFD700_0%,transparent_50%)] blur-xl opacity-75",
-          style.class
-          )} />
+          "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,theme(colors.accent),transparent_40%),radial-gradient(circle_at_80%_20%,theme(colors.accent),transparent_40%)] blur-2xl opacity-75 animate-bg-pan-smoke [background-size:400%_400%]",
+          animationDirection
+          )} style={{ animationDuration: `${20 + index * 5}s` }}/>
       </div>
 
       {/* Glass tube container (the visible border) */}

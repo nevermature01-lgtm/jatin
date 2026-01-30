@@ -4,7 +4,7 @@
       "id": "property-1",
       "description": "Modern villa with a pool",
       "imageUrl": "https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk3MTYyMDR8MA&ixlib=rb-4.1.0&q=80&w=3840",
-      "mobileImageUrl": "https://images.unsplash.com/photo-1579930251954-228795159480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3J0cmFpdCUyMG1vZGVybiUyMHZpbGxhfGVufDB8fHx8MTc3MDEwMzQ2NXww&ixlib=rb-4.1.0&q=80&w=3840",
+      "mobileImageUrl": "/mob_1.jpg",
       "imageHint": "modern villa"
     },
     {
@@ -17,7 +17,7 @@
       "id": "property-3",
       "description": "Downtown penthouse apartment",
       "imageUrl": "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2OTcwMDIzNHww&ixlib=rb-4.1.0&q=80&w=3840",
-      "mobileImageUrl": "https://images.unsplash.com/photo-1600210492493-4194603504a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGx1eHVyeSUyMGFwYXJ0bWVudHxlbnwwfHx8fDE3NzAxMDM1MDF8MA&ixlib=rb-4.1.0&q=80&w=3840",
+      "mobileImageUrl": "/mob_2.jpg",
       "imageHint": "luxury apartment"
     },
     {
@@ -30,7 +30,7 @@
       "id": "property-5",
       "description": "Beachfront property with ocean view",
       "imageUrl": "https://images.unsplash.com/photo-1528913775512-624d24b27b96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTY5MDA4Mnww&ixlib=rb-4.1.0&q=80&w=3840",
-      "mobileImageUrl": "https://images.unsplash.com/photo-1589139934252-a67501b1b87a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3J0cmFpdCUyMGJlYWNoJTIwaG91c2V8ZW58MHx8fHwxNzcwMTAzNTMwfDA&ixlib=rb-4.1.0&q=80&w=3840",
+      "mobileImageUrl": "/mob_3.jpg",
       "imageHint": "beach house"
     },
     {
@@ -43,7 +43,7 @@
       "id": "hero-background",
       "description": "Luxury home exterior",
       "imageUrl": "https://images.unsplash.com/photo-1561026000-94e070de0909?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBlc3RhdGV8ZW58MHx8fHwxNzY5NzY2NjE0fDA&ixlib=rb-4.1.0&q=80&w=3840",
-      "mobileImageUrl": "https://images.unsplash.com/photo-1613553474176-24a6549493a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMGx1eHVyeSUyMGVzdGF0ZXxlbnwwfHx8fDE3NzAxMDM0MzJ8MA&ixlib=rb-4.1.0&q=80&w=3840",
+      "mobileImageUrl": "/mob_1.jpg",
       "imageHint": "luxury estate"
     }
   ]

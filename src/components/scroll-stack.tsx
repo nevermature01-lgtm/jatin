@@ -30,7 +30,6 @@ const ScrollStack: FC<{
   stackPosition?: string | number;
   scaleEndPosition?: string | number;
   baseScale?: number;
-  scaleDuration?: number;
   rotationAmount?: number;
   blurAmount?: number;
   useWindowScroll?: boolean;
@@ -221,17 +220,30 @@ const ScrollStack: FC<{
 
   const setupLenis = useCallback(() => {
     if (typeof window === 'undefined') return;
+    
+    const lenisOptions = {
+        duration: 1.2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        touchMultiplier: 2,
+        infinite: false,
+        wheelMultiplier: 1,
+        lerp: 0.1,
+        syncTouch: true,
+        syncTouchLerp: 0.075
+    };
 
     let lenis: Lenis;
     
     if (useWindowScroll) {
-      lenis = new Lenis();
+      lenis = new Lenis(lenisOptions);
     } else {
       const scroller = scrollerRef.current;
       if (!scroller) return;
       const content = scroller.querySelector('.scroll-stack-inner') as HTMLElement;
       if (!content) return;
       lenis = new Lenis({
+        ...lenisOptions,
         wrapper: scroller,
         content: content,
       });

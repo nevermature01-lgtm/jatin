@@ -16,6 +16,7 @@ import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
+import { FeaturedProperties } from '@/components/featured-properties';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,6 +44,7 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
+        <FeaturedProperties />
       </main>
     </div>
   );

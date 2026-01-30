@@ -40,7 +40,7 @@ export function RealEstateJourneySection() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center w-full text-center md:text-left">
           {/* Left Side */}
-          <div className="flex flex-col items-center md:items-start gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6 mt-8 md:mt-0">
             <p className="text-sm font-bold tracking-widest uppercase">
               Discover More
             </p>
@@ -78,7 +78,7 @@ export function RealEstateJourneySection() {
                   Contact Us &gt;
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/80 text-white hover:bg-white/10 rounded-sm px-6 py-6 text-base backdrop-blur-sm">
+              <Button asChild size="lg" variant="outline" className="border-white/80 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm rounded-sm px-6 py-6 text-base">
                 <Link href="#">
                   View Listings &gt;
                 </Link>

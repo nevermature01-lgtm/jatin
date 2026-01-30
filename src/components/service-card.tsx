@@ -9,14 +9,17 @@ interface ServiceCardProps {
 
 export function ServiceCard({ icon: Icon, title, description }: ServiceCardProps) {
   return (
-    <div className="flex items-start gap-6 text-left">
-      <Icon className="w-8 h-8 text-neutral-700 mt-1 flex-shrink-0" />
+    <div className="flex flex-col items-center gap-6 text-center md:flex-row md:items-start md:text-left">
+      <Icon className="h-8 w-8 flex-shrink-0 text-neutral-700 md:mt-1" />
       <div>
-        <h3 className="text-xl font-bold text-neutral-800 mb-2">{title}</h3>
-        <p className="text-base text-neutral-600 mb-4">{description}</p>
-        <Link href="#" className="text-sm font-bold text-neutral-800 flex items-center gap-2 group">
+        <h3 className="mb-2 text-xl font-bold text-neutral-800">{title}</h3>
+        <p className="mb-4 text-base text-neutral-600">{description}</p>
+        <Link
+          href="#"
+          className="group flex items-center justify-center gap-2 text-sm font-bold text-neutral-800 md:justify-start"
+        >
           Learn More
-          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Link>
       </div>
     </div>

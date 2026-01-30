@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "property-1",
+      "description": "Modern villa with a pool",
+      "imageUrl": "https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk3MTYyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern villa"
+    },
+    {
+      "id": "property-2",
+      "description": "Cozy suburban house",
+      "imageUrl": "https://images.unsplash.com/photo-1625603736199-775425d2890a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "suburban house"
+    },
+    {
+      "id": "property-3",
+      "description": "Downtown penthouse apartment",
+      "imageUrl": "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2OTcwMDIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury apartment"
+    },
+    {
+      "id": "property-4",
+      "description": "Spacious family home with garden",
+      "imageUrl": "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTY5MjM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family home"
+    },
+    {
+      "id": "property-5",
+      "description": "Beachfront property with ocean view",
+      "imageUrl": "https://images.unsplash.com/photo-1528913775512-624d24b27b96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTY5MDA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach house"
+    },
+    {
+      "id": "property-6",
+      "description": "Rustic cabin in the woods",
+      "imageUrl": "https://images.unsplash.com/photo-1765012684429-0f5353bfa484?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxydXN0aWMlMjBjYWJpbnxlbnwwfHx8fDE3Njk3NjY2MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rustic cabin"
+    },
+    {
+      "id": "hero-background",
+      "description": "Luxury home exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1561026000-94e070de0909?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBlc3RhdGV8ZW58MHx8fHwxNzY5NzY2NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury estate"
+    }
+  ]
 }

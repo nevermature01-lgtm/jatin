@@ -73,7 +73,7 @@ export function Header() {
                       <SheetClose asChild>
                         <Link href="/" className="flex items-center space-x-2">
                             <span className="font-bold text-2xl font-headline tracking-wider text-foreground">
-                                LuxeEstate
+                                LANDMARKLANE
                             </span>
                         </Link>
                       </SheetClose>
@@ -95,7 +95,7 @@ export function Header() {
             
             <Link href="/" className="flex items-center space-x-2">
               <span className={cn('font-bold text-2xl font-headline tracking-wider transition-colors', isScrolled ? 'text-foreground' : 'text-white')}>
-                LuxeEstate
+                LANDMARKLANE
               </span>
             </Link>
           </div>

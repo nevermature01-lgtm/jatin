@@ -3,8 +3,8 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'LuxeEstate - Luxury Real Estate',
-  description: 'Find your dream luxury home with LuxeEstate.',
+  title: 'LANDMARKLANE - Luxury Real Estate',
+  description: 'Find your dream luxury home with LANDMARKLANE.',
 };
 
 export default function RootLayout({

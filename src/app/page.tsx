@@ -30,7 +30,7 @@ export default function Home() {
           <HeroSlider />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4 animate-fade-in">
             <div className="animate-slide-up-slow">
-              <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-2xl">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline drop-shadow-2xl">
                 Explore the World’s Finest Properties
               </h1>
               <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg">

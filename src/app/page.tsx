@@ -15,6 +15,7 @@ import { properties } from '@/lib/data';
 import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
+import { MovingRibbon } from '@/components/moving-ribbon';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,6 +42,7 @@ export default function Home() {
             </Button>
           </div>
         </section>
+        <MovingRibbon />
       </main>
     </div>
   );

@@ -1,0 +1,40 @@
+'use client';
+
+import React from 'react';
+
+const RibbonContent = () => {
+    const items = [
+        'Luxury Villas', ' • ',
+        'Penthouse Collection', ' • ',
+        'Waterfront Estates', ' • ',
+        'Private Islands', ' • ',
+        'Equestrian Properties', ' • ',
+        'Historic Manors', ' • ',
+        'Urban Lofts', ' • ',
+        'Mountain Retreats', ' • ',
+      ];
+    return (
+        <>
+            {items.map((item, index) => (
+                <span key={index} className="mx-4 text-2xl font-headline tracking-wider">
+                    {item}
+                </span>
+            ))}
+        </>
+    )
+}
+
+export function MovingRibbon() {
+  return (
+    <section className="w-full bg-primary text-primary-foreground py-4 overflow-hidden whitespace-nowrap">
+        <div className="flex animate-marquee">
+            <div className="flex-shrink-0 flex items-center">
+                <RibbonContent />
+            </div>
+            <div aria-hidden="true" className="flex-shrink-0 flex items-center">
+                <RibbonContent />
+            </div>
+        </div>
+    </section>
+  );
+}

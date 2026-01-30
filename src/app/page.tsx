@@ -20,12 +20,12 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-screen w-full">
           <HeroSlider />
-          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4 animate-fade-in">
-            <div className="animate-slide-up-slow">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
+            <div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-normal drop-shadow-2xl animate-fade-in animate-slide-up-slow">
                 Explore the World’s Finest Properties
               </h1>
-              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg mx-auto">
+              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg mx-auto animate-fade-in animate-slide-up-fast">
                 Your new life of elegance and comfort awaits among our curated collection of luxury homes.
               </p>
             </div>

@@ -84,7 +84,7 @@ export function Header() {
                         Select a link to navigate to a different page.
                       </SheetDescription>
                       <SheetClose asChild>
-                        <Link href="/" className="flex items-center space-x-2">
+                        <Link href="/" className="flex items-center space-x-2 mt-2">
                             <span className="font-bold text-xl font-headline tracking-wider text-foreground">
                                 LANDMARKLANE
                             </span>

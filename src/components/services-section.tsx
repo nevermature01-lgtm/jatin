@@ -55,7 +55,7 @@ export function ServicesSection() {
             <AnimatedGridItem
               key={service.title}
               index={index}
-              className={`group p-6 sm:p-8 border-b border-white/20 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-gray-800
+              className={`group p-6 sm:p-8 border-b border-white/20 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-accent/20
                 ${ index % 3 !== 2 ? 'md:border-r md:border-white/20' : '' } 
                 ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
             >

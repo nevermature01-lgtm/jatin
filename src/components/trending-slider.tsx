@@ -23,7 +23,7 @@ export function TrendingSlider() {
       >
         <CarouselContent className="-ml-4">
           {properties.slice(0, 5).map((property) => (
-            <CarouselItem key={property.id} className="pl-4 md:basis-1/2 lg:basis-2/5">
+            <CarouselItem key={property.id} className="pl-4 basis-2/3 md:basis-1/2 lg:basis-2/5">
               <PropertyCard property={property} />
             </CarouselItem>
           ))}

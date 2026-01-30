@@ -20,7 +20,6 @@ import { Bath, BedDouble, MapPin, Search, Square } from 'lucide-react';
 import { properties } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/header';
-import { Label } from '@/components/ui/label';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -29,72 +28,82 @@ export default function Home() {
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[60vh] w-full">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              fill
-              className="object-cover"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
-          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline drop-shadow-lg">
-              Find Your Dream Home
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg md:text-xl font-body drop-shadow-md">
-              Discover the finest luxury properties. Your new life of elegance and comfort awaits.
-            </p>
-            <form className="mt-8 w-full max-w-4xl rounded-lg bg-background/90 p-4 md:p-6 shadow-2xl backdrop-blur-sm">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 items-end">
-                <div className="space-y-2 text-left">
-                  <Label htmlFor="location" className="text-sm font-medium text-foreground">
-                    Location
-                  </Label>
-                  <Input id="location" placeholder="e.g., Beverly Hills, CA" className="bg-white" />
+        <section className="relative h-screen w-full">
+          <div className="absolute inset-0 overflow-hidden">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover animate-zoom-in"
+                priority
+                data-ai-hint={heroImage.imageHint}
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10" />
+          </div>
+          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4 animate-fade-in">
+            <div className="animate-slide-up-slow">
+              <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-2xl">
+                Explore the World’s Finest Properties
+              </h1>
+              <p className="mt-4 max-w-3xl text-lg md:text-xl font-body drop-shadow-lg">
+                Your new life of elegance and comfort awaits among our curated collection of luxury homes.
+              </p>
+            </div>
+
+            <form className="mt-12 w-full max-w-4xl rounded-full bg-black/30 p-2 shadow-2xl backdrop-blur-md animate-slide-up-fast border border-white/20">
+                <div className="flex flex-col md:flex-row items-center">
+                    <div className="relative w-full md:flex-1 flex items-center">
+                        <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/70 pointer-events-none" />
+                        <Input
+                        id="location"
+                        placeholder="City, Region, Country"
+                        className="h-14 bg-transparent border-none text-white placeholder:text-white/70 focus-visible:ring-0 focus-visible:ring-offset-0 pl-12 text-base w-full"
+                        />
+                    </div>
+                    
+                    <div className="w-full h-px md:h-8 md:w-px bg-white/20 my-2 md:my-0" />
+
+                    <div className="w-full md:w-auto">
+                        <Select>
+                            <SelectTrigger className="h-14 w-full md:w-48 bg-transparent border-none text-white/70 focus:ring-0 focus:ring-offset-0 text-base justify-start px-4">
+                                <SelectValue placeholder="Any Price" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="1m">$0 - $1,000,000</SelectItem>
+                                <SelectItem value="3m">$1,000,000 - $3,000,000</SelectItem>
+                                <SelectItem value="5m">$3,000,000 - $5,000,000</SelectItem>
+                                <SelectItem value="10m">$5,000,000 - $10,000,000</SelectItem>
+                                <SelectItem value="10m+">$10,000,000+</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
+                    
+                    <div className="w-full h-px md:h-8 md:w-px bg-white/20 my-2 md:my-0" />
+                    
+                    <div className="w-full md:w-auto">
+                        <Select>
+                            <SelectTrigger className="h-14 w-full md:w-36 bg-transparent border-none text-white/70 focus:ring-0 focus:ring-offset-0 text-base justify-start px-4">
+                                <SelectValue placeholder="Any Beds" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="1">1+</SelectItem>
+                                <SelectItem value="2">2+</SelectItem>
+                                <SelectItem value="3">3+</SelectItem>
+                                <SelectItem value="4">4+</SelectItem>
+                                <SelectItem value="5">5+</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
+                    
+                    <div className="w-full md:w-auto p-1 md:p-0 md:pr-1">
+                        <Button type="submit" className="w-full md:w-auto h-12 rounded-full text-base bg-primary hover:bg-primary/90 px-6">
+                            <Search className="mr-2 h-4 w-4" />
+                            Search
+                        </Button>
+                    </div>
                 </div>
-                <div className="space-y-2 text-left">
-                  <Label htmlFor="price" className="text-sm font-medium text-foreground">
-                    Price Range
-                  </Label>
-                  <Select>
-                    <SelectTrigger id="price" className="w-full bg-white">
-                      <SelectValue placeholder="Any Price" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="1m">$0 - $1,000,000</SelectItem>
-                      <SelectItem value="3m">$1,000,000 - $3,000,000</SelectItem>
-                      <SelectItem value="5m">$3,000,000 - $5,000,000</SelectItem>
-                      <SelectItem value="10m">$5,000,000 - $10,000,000</SelectItem>
-                      <SelectItem value="10m+">$10,000,000+</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="space-y-2 text-left">
-                  <Label htmlFor="beds" className="text-sm font-medium text-foreground">
-                    Beds
-                  </Label>
-                  <Select>
-                    <SelectTrigger id="beds" className="w-full bg-white">
-                      <SelectValue placeholder="Any" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="1">1+</SelectItem>
-                      <SelectItem value="2">2+</SelectItem>
-                      <SelectItem value="3">3+</SelectItem>
-                      <SelectItem value="4">4+</SelectItem>
-                      <SelectItem value="5">5+</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <Button type="submit" className="w-full sm:col-span-2 md:col-span-1">
-                  <Search className="mr-2 h-4 w-4" />
-                  Search
-                </Button>
-              </div>
             </form>
           </div>
         </section>

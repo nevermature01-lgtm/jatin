@@ -17,10 +17,10 @@ export function HeroSlider({
   onSlideChange?: (index: number) => void;
 }) {
   const desktopImages = [
-    { id: 'd1', src: '/desktop_1.webp', alt: 'Modern villa with a pool', hint: 'modern villa' },
-    { id: 'd2', src: '/desktop_2.webp', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
     { id: 'd3', src: '/desktop_3.webp', alt: 'Beachfront property with ocean view', hint: 'beach house' },
-  ].reverse();
+    { id: 'd2', src: '/desktop_2.webp', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
+    { id: 'd1', src: '/desktop_1.webp', alt: 'Modern villa with a pool', hint: 'modern villa' },
+  ];
 
   const mobileImages = [
     { id: 'm1', src: '/mob_1.jpg', alt: 'Modern villa with a pool', hint: 'modern villa' },
@@ -76,7 +76,7 @@ export function HeroSlider({
                 {heroImages.map((images, index) => {
                     return (
                         <CarouselItem key={images.desktop.id} className="overflow-hidden">
-                            <div className="w-full h-screen relative">
+                            <div className="w-full h-[85vh] md:h-screen relative">
                                 {/* Desktop Image */}
                                 <Image
                                     src={images.desktop.src}

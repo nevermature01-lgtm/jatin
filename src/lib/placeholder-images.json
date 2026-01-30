@@ -51,6 +51,30 @@
       "description": "A real estate agent handing keys to a happy couple.",
       "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059ee41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbnQlMjBjb3VwbGV8ZW58MHx8fHwxNzEwOTU4NTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "couple realtor keys"
+    },
+    {
+      "id": "journey-background",
+      "description": "Row of suburban houses at dusk",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdWJ1cmJhbiUyMGhvdXNlcyUyMGR1c2t8ZW58MHx8fHwxNzEwOTU4NTM1fDA&ixlib=rb-4.1.0&q=80&w=1920",
+      "imageHint": "suburban houses"
+    },
+    {
+      "id": "avatar-1",
+      "description": "Avatar of a person",
+      "imageUrl": "https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "avatar-2",
+      "description": "Avatar of a person",
+      "imageUrl": "https://images.unsplash.com/photo-1750535135645-005e250ff210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "avatar-3",
+      "description": "Avatar of a person",
+      "imageUrl": "https://images.unsplash.com/photo-1750535135451-7c20e24b60c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
     }
   ]
 }

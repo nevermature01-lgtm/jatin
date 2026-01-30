@@ -11,7 +11,6 @@ import Autoplay from 'embla-carousel-autoplay';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import React, { useCallback, useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 export function HeroSlider() {
   const heroImages = PlaceHolderImages.filter(img => 
@@ -25,7 +24,6 @@ export function HeroSlider() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
-  const isMobile = useIsMobile();
 
   const onDotButtonClick = useCallback((index: number) => {
     api?.scrollTo(index);
@@ -60,11 +58,22 @@ export function HeroSlider() {
                 {heroImages.map((image, index) => (
                     <CarouselItem key={image.id}>
                         <div className="w-full h-screen relative">
+                            {/* Desktop Image */}
                             <Image
-                                src={isMobile && image.mobileImageUrl ? image.mobileImageUrl : image.imageUrl}
+                                src={image.imageUrl}
                                 alt={image.description}
                                 fill
-                                className="object-cover animate-zoom-in"
+                                className="object-cover animate-zoom-in hidden md:block"
+                                priority={index === 0}
+                                data-ai-hint={image.imageHint}
+                                sizes="100vw"
+                            />
+                            {/* Mobile Image */}
+                            <Image
+                                src={image.mobileImageUrl || image.imageUrl}
+                                alt={image.description}
+                                fill
+                                className="object-cover animate-zoom-in md:hidden"
                                 priority={index === 0}
                                 data-ai-hint={image.imageHint}
                                 sizes="100vw"

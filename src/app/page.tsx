@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
 import { TrendingSlider } from '@/components/trending-slider';
 import { ServicesSection } from '@/components/services-section';
+import { AboutUsSection } from '@/components/about-us-section';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,6 +57,7 @@ export default function Home() {
           </div>
         </section>
         <ServicesSection />
+        <AboutUsSection />
       </main>
     </div>
   );

@@ -1,0 +1,90 @@
+'use client';
+
+import Image from 'next/image';
+import { Check } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+export function AboutUsSection() {
+  const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
+
+  if (!aboutImage) {
+    // or a fallback
+    return null;
+  }
+
+  return (
+    <section className="py-16 sm:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+              ABOUT US
+            </p>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-foreground mb-8">
+              Blending Modern Design and Tradition to <em className="italic">Build Your Future</em>
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base text-muted-foreground mb-10">
+              <p>
+                At LANDMARKLANE, we redefine living spaces with innovative designs and unparalleled expertise. Our passion lies in creating homes that inspire. With a commitment to quality and customer satisfaction.
+              </p>
+              <p>
+                Every detail is crafted with precision, ensuring you find the perfect place to call home. From luxury properties to functional spaces, LANDMARKLANE brings dreams to life, one home at a time.
+              </p>
+            </div>
+
+            <div className="mb-10">
+              <h3 className="text-2xl font-headline text-foreground mb-4">Our Vision</h3>
+              <p className="text-base text-muted-foreground">
+                To be the leading real estate brand, redefining modern living by creating spaces that inspire, empower, and elevate lifestyles.
+              </p>
+            </div>
+
+            <div className="mb-10">
+              <h3 className="text-2xl font-headline text-foreground mb-4">Our Mission</h3>
+              <ul className="space-y-3">
+                {[
+                  'Connecting people with perfect properties',
+                  'Delivering excellence in real estate.',
+                  'Empowering communities through exceptional spaces',
+                  'Creating value, trust, and satisfaction',
+                  'Redefining modern living with innovation',
+                ].map((mission) => (
+                  <li key={mission} className="flex items-start">
+                    <Check className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                    <span className="text-muted-foreground">{mission}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="flex items-center justify-center lg:pt-20">
+            <Image
+              src={aboutImage.imageUrl}
+              alt={aboutImage.description}
+              width={600}
+              height={700}
+              className="rounded-lg object-cover shadow-lg aspect-[6/7]"
+              data-ai-hint={aboutImage.imageHint}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+
+        <div className="mt-16 rounded-lg bg-gray-900 p-8 md:p-12">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <h2 className="text-4xl font-headline text-white text-center md:text-left">
+                    Start Your Property<br />Search Now!
+                </h2>
+                <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 rounded-sm px-8 py-6 text-base">
+                    <Link href="#">
+                        Contact Us &gt;
+                    </Link>
+                </Button>
+            </div>
+        </div>
+      </div>
+    </section>
+  );
+}

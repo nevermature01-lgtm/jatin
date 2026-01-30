@@ -110,7 +110,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center justify-end">
-            <Button asChild variant="outline" className={cn('rounded-full transition-colors font-body', isScrolled ? 'border-primary/50 text-primary hover:bg-primary/10' : 'border-white/50 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm')}>
+            <Button asChild variant="outline" className={cn('hidden md:inline-flex rounded-full transition-colors font-body', isScrolled ? 'border-primary/50 text-primary hover:bg-primary/10' : 'border-white/50 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm')}>
               <Link href="#">
                 Contact us
               </Link>

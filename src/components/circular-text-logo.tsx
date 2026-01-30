@@ -6,7 +6,7 @@ export function CircularTextLogo() {
   const text = '• LANDMARKLANE • LANDMARKLANE ';
   
   return (
-    <div className="absolute top-0 right-0 w-36 h-36 -mt-10 -mr-4 sm:w-48 sm:h-48 sm:-mt-16 sm:-mr-8 block pointer-events-none">
+    <div className="absolute top-0 right-0 w-36 h-36 -mt-16 mr-4 sm:w-48 sm:h-48 sm:-mt-24 sm:mr-8 block pointer-events-none">
         <div className="relative w-full h-full animate-spin-slow">
             <svg viewBox="0 0 100 100" className="w-full h-full">
                 <defs>

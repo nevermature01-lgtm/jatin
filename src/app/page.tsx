@@ -42,7 +42,7 @@ export default function Home() {
                   Trending
                 </h2>
                 <p className="text-base text-neutral-600 mb-8 max-w-sm">
-                  Discover the homes that are capturing attention in the market. This curated selection showcases the most sought-after properties available right now.
+                  Discover the Property that are capturing attention in the market.
                 </p>
                 <Button size="lg" className="bg-neutral-900 text-white hover:bg-neutral-800 rounded-full px-8 py-6 text-base">
                   See all

@@ -5,12 +5,12 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
 
 export function HeroSlider() {
   const heroImages = PlaceHolderImages.filter(img => 
@@ -21,9 +21,31 @@ export function HeroSlider() {
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const onDotButtonClick = useCallback((index: number) => {
+    api?.scrollTo(index);
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
     <div className="absolute inset-0 overflow-hidden">
         <Carousel
+            setApi={setApi}
             className="w-full h-full"
             plugins={[plugin.current]}
             opts={{
@@ -49,9 +71,19 @@ export function HeroSlider() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-white/30 hover:border-white/50" />
-            <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-white/30 hover:border-white/50" />
         </Carousel>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex space-x-2">
+            {Array.from({ length: count }).map((_, index) => (
+                <button
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={cn(
+                    'h-1 w-8 bg-white/50 transition-all',
+                    current === index ? 'bg-white' : 'bg-white/50'
+                )}
+                />
+            ))}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10" />
     </div>
   );

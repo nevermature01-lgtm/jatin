@@ -17,6 +17,8 @@ export function HeroSlider() {
     ['property-1', 'property-3', 'property-5'].includes(img.id)
   );
   
+  const reversedHeroImages = [...heroImages].reverse();
+
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
@@ -55,32 +57,35 @@ export function HeroSlider() {
             onMouseLeave={plugin.current.reset}
         >
             <CarouselContent>
-                {heroImages.map((image, index) => (
-                    <CarouselItem key={image.id}>
-                        <div className="w-full h-screen relative">
-                            {/* Desktop Image */}
-                            <Image
-                                src={image.imageUrl}
-                                alt={image.description}
-                                fill
-                                className="object-cover animate-zoom-in hidden md:block"
-                                priority={index === 0}
-                                data-ai-hint={image.imageHint}
-                                sizes="100vw"
-                            />
-                            {/* Mobile Image */}
-                            <Image
-                                src={image.mobileImageUrl || image.imageUrl}
-                                alt={image.description}
-                                fill
-                                className="object-cover animate-zoom-in md:hidden"
-                                priority={index === 0}
-                                data-ai-hint={image.imageHint}
-                                sizes="100vw"
-                            />
-                        </div>
-                    </CarouselItem>
-                ))}
+                {heroImages.map((image, index) => {
+                    const mobileImage = reversedHeroImages[index];
+                    return (
+                        <CarouselItem key={image.id}>
+                            <div className="w-full h-screen relative">
+                                {/* Desktop Image */}
+                                <Image
+                                    src={image.imageUrl}
+                                    alt={image.description}
+                                    fill
+                                    className="object-cover animate-zoom-in hidden md:block"
+                                    priority={index === 0}
+                                    data-ai-hint={image.imageHint}
+                                    sizes="100vw"
+                                />
+                                {/* Mobile Image */}
+                                <Image
+                                    src={mobileImage.mobileImageUrl || mobileImage.imageUrl}
+                                    alt={mobileImage.description}
+                                    fill
+                                    className="object-cover animate-zoom-in md:hidden"
+                                    priority={index === 0}
+                                    data-ai-hint={mobileImage.imageHint}
+                                    sizes="100vw"
+                                />
+                            </div>
+                        </CarouselItem>
+                    );
+                })}
             </CarouselContent>
         </Carousel>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex space-x-2">

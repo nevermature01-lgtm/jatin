@@ -1,6 +1,8 @@
 import { Home, Building2, Landmark, UserCog, SearchCheck, Tag } from 'lucide-react';
 import { ServiceCard } from './service-card';
 import { AnimatedGridItem } from './animated-grid-item';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const services = [
   {
@@ -56,12 +58,24 @@ export function ServicesSection() {
               key={service.title}
               index={index}
               className={`group p-6 sm:p-8 border-b border-white/20 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-accent/20
-                ${ index % 3 !== 2 ? 'md:border-r md:border-white/20' : '' } 
-                ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
+                ${ index % 3 !== 2 ? 'md:border-r md:border-white/20' : '' }`}
             >
               <ServiceCard {...service} />
             </AnimatedGridItem>
           ))}
+        </div>
+
+        <div className="mt-16 rounded-lg bg-white/5 p-8 md:p-12 border border-white/10 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <h2 className="text-4xl font-headline text-white text-center md:text-left">
+                    Ready to Find Your<br />Dream Property?
+                </h2>
+                <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 rounded-sm px-8 py-6 text-base">
+                    <Link href="#">
+                        Explore Listings &gt;
+                    </Link>
+                </Button>
+            </div>
         </div>
       </div>
     </section>

@@ -73,7 +73,10 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/80 p-0 backdrop-blur-lg border-white/20">
+              <SheetContent
+                side="left"
+                className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/70 p-0 backdrop-blur-xl border border-white/20 data-[state=open]:fade-in data-[state=open]:slide-in-from-top-5 data-[state=open]:duration-500 data-[state=closed]:fade-out data-[state=closed]:slide-out-to-top-5"
+              >
                 <div className="flex flex-col">
                     <SheetHeader className="p-6 pb-4">
                       <SheetTitle className="sr-only">Mobile Menu</SheetTitle>

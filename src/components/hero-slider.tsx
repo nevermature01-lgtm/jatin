@@ -14,8 +14,8 @@ import { cn } from '@/lib/utils';
 export function HeroSlider() {
   const desktopImages = [
     { id: 'd1', src: '/desktop_1.webp', alt: 'Modern villa with a pool', hint: 'modern villa' },
-    { id: 'd2', src: '/desktop_2.jpg', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
-    { id: 'd3', src: '/desktop_3.jpg', alt: 'Beachfront property with ocean view', hint: 'beach house' },
+    { id: 'd2', src: '/desktop_2.webp', alt: 'Downtown penthouse apartment', hint: 'luxury apartment' },
+    { id: 'd3', src: '/desktop_3.webp', alt: 'Beachfront property with ocean view', hint: 'beach house' },
   ];
 
   const mobileImages = [

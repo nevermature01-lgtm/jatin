@@ -68,7 +68,6 @@ export function HeroSlider() {
                                     alt={image.description}
                                     fill
                                     className="object-cover animate-zoom-in hidden md:block"
-                                    priority={index === 0}
                                     data-ai-hint={image.imageHint}
                                     sizes="100vw"
                                 />

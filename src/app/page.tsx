@@ -18,30 +18,16 @@ import {
 } from '@/components/ui/select';
 import { Bath, BedDouble, MapPin, Search, Square } from 'lucide-react';
 import { properties } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/header';
+import { HeroSlider } from '@/components/hero-slider';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
-
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
         <section className="relative h-screen w-full">
-          <div className="absolute inset-0 overflow-hidden">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover animate-zoom-in"
-                priority
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10" />
-          </div>
+          <HeroSlider />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4 animate-fade-in">
             <div className="animate-slide-up-slow">
               <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-2xl">

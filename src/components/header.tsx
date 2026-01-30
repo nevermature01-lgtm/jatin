@@ -8,6 +8,9 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 
@@ -72,7 +75,11 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] bg-background p-0">
                 <div className="flex h-full flex-col">
-                    <div className="p-6">
+                    <SheetHeader className="p-6">
+                      <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                      <SheetDescription className="sr-only">
+                        Select a link to navigate to a different page.
+                      </SheetDescription>
                       <SheetClose asChild>
                         <Link href="/" className="flex items-center space-x-2">
                             <span className="font-bold text-2xl font-headline tracking-wider text-foreground">
@@ -80,7 +87,7 @@ export function Header() {
                             </span>
                         </Link>
                       </SheetClose>
-                    </div>
+                    </SheetHeader>
                     <Separator />
                     <nav className="flex flex-col space-y-2 p-6">
                       {mainNavLinks.map(link => (

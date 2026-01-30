@@ -1,18 +1,32 @@
 'use client';
 
-import Image from 'next/image';
-import { Check } from 'lucide-react';
+import { Check, Award, Users, CalendarCheck, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function AboutUsSection() {
-  const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
-
-  if (!aboutImage) {
-    // or a fallback
-    return null;
-  }
+  const stats = [
+    {
+      icon: Award,
+      value: "15+",
+      label: "Years of Excellence",
+    },
+    {
+      icon: Users,
+      value: "25,000+",
+      label: "Satisfied Clients",
+    },
+    {
+      icon: CalendarCheck,
+      value: "2,500+",
+      label: "Properties Delivered",
+    },
+    {
+      icon: TrendingUp,
+      value: "₹500+ Cr",
+      label: "Property Value Handled",
+    },
+  ];
 
   return (
     <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900">
@@ -59,16 +73,18 @@ export function AboutUsSection() {
               </ul>
             </div>
           </div>
-          <div className="flex items-center justify-center lg:pt-20">
-            <Image
-              src={aboutImage.imageUrl}
-              alt={aboutImage.description}
-              width={600}
-              height={700}
-              className="rounded-lg object-cover shadow-lg aspect-[6/7]"
-              data-ai-hint={aboutImage.imageHint}
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pt-10">
+            {stats.map((stat, index) => (
+                <div key={index} className="bg-gray-800/50 rounded-lg p-6 text-center flex flex-col items-center justify-center">
+                <div className="flex justify-center mb-4">
+                    <div className="bg-accent rounded-full p-3">
+                    <stat.icon className="h-8 w-8 text-accent-foreground" />
+                    </div>
+                </div>
+                <p className="text-4xl font-headline text-white mb-2">{stat.value}</p>
+                <p className="text-base text-neutral-300">{stat.label}</p>
+                </div>
+            ))}
           </div>
         </div>
 

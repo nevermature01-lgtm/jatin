@@ -118,9 +118,9 @@ export function Header() {
             </Button>
           </div>
         </div>
-
-        <Separator className={cn('transition-colors', isScrolled ? 'bg-border' : 'bg-white/20')} />
-
+      </div>
+      <Separator className={cn('transition-colors', isScrolled ? 'bg-border' : 'bg-white/20')} />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-12 items-center justify-center overflow-hidden">
             <nav className="w-full overflow-x-auto whitespace-nowrap text-center [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="inline-flex items-center space-x-8 px-4 text-sm font-medium">

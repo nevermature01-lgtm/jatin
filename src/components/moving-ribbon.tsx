@@ -26,7 +26,7 @@ const RibbonContent = () => {
 
 export function MovingRibbon() {
   return (
-    <section className="w-full bg-gradient-to-r from-amber-400 to-amber-600 text-accent-foreground py-2 overflow-hidden whitespace-nowrap">
+    <section className="w-screen bg-gradient-to-r from-amber-400 to-amber-600 text-accent-foreground py-2 overflow-hidden whitespace-nowrap">
         <div className="flex animate-marquee">
             <div className="flex-shrink-0 flex items-center">
                 <RibbonContent />

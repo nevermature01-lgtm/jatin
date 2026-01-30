@@ -13,10 +13,10 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background">
+    <div className="flex min-h-screen w-screen flex-col bg-background">
       <Header />
-      <main className="flex-1">
-        <section className="relative w-full h-[95vh]">
+      <main className="flex-1 w-screen">
+        <section className="relative w-screen h-[95vh]">
           <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
             <div key={currentSlide}>

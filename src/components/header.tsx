@@ -29,7 +29,7 @@ export function Header() {
   ];
 
   return (
-    <header className="absolute top-0 z-50 w-full bg-gradient-to-b from-black/60 to-transparent">
+    <header className="absolute top-0 z-50 w-screen bg-gradient-to-b from-black/60 to-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between gap-4">
           <div className="flex items-center gap-2 md:gap-6">

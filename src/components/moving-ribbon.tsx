@@ -4,18 +4,12 @@ import React from 'react';
 
 const RibbonContent = () => {
     const items = [
-        'LANDMARKLANE', ' • ',
-        'Dholera', ' • ',
-        'Noida', ' • ',
-        'Vrindavan', ' • ',
-        'Agra', ' • ',
-        'LANDMARKLANE', ' • ',
-        'LANDMARKLANE', ' • ',
-        'Dholera', ' • ',
-        'Noida', ' • ',
-        'Vrindavan', ' • ',
-        'Agra', ' • ',
-        'LANDMARKLANE', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
+        'LANDMARKLANE', ' • ', 'Dholera', ' • ', 'Noida', ' • ', 'Vrindavan', ' • ', 'Agra', ' • ',
       ];
     return (
         <>

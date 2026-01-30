@@ -73,26 +73,26 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] bg-background p-0">
-                <div className="flex h-full flex-col">
-                    <SheetHeader className="p-6">
+              <SheetContent side="left" className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/80 p-0 backdrop-blur-lg border-white/20">
+                <div className="flex flex-col">
+                    <SheetHeader className="p-6 pb-4">
                       <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
                       <SheetDescription className="sr-only">
                         Select a link to navigate to a different page.
                       </SheetDescription>
                       <SheetClose asChild>
                         <Link href="/" className="flex items-center space-x-2">
-                            <span className="font-bold text-2xl font-headline tracking-wider text-foreground">
+                            <span className="font-bold text-xl font-headline tracking-wider text-foreground">
                                 LANDMARKLANE
                             </span>
                         </Link>
                       </SheetClose>
                     </SheetHeader>
-                    <Separator />
-                    <nav className="flex flex-col space-y-2 p-6">
+                    <Separator className="bg-foreground/10" />
+                    <nav className="flex flex-col space-y-1 p-4">
                       {mainNavLinks.map(link => (
                           <SheetClose asChild key={link.label}>
-                            <Link href={link.href} className="flex items-center py-2 text-lg font-medium text-foreground/80 hover:text-foreground">
+                            <Link href={link.href} className="flex items-center rounded-md px-3 py-2 text-base font-medium text-foreground/80 hover:bg-foreground/5 hover:text-foreground">
                               {link.label}
                             </Link>
                           </SheetClose>

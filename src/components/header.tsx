@@ -110,10 +110,9 @@ export function Header() {
           </nav>
 
           <div className="flex items-center justify-end">
-            <Button asChild variant="outline" className={cn('rounded-full transition-colors font-body', isScrolled ? 'border-primary/50 text-primary hover:bg-primary/10' : 'border-white/50 text-white hover:bg-white/10')}>
+            <Button asChild variant="outline" className={cn('rounded-full transition-colors font-body', isScrolled ? 'border-primary/50 text-primary hover:bg-primary/10' : 'border-white/50 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm')}>
               <Link href="#">
-                <User className="mr-2 h-4 w-4" />
-                Log in
+                Contact us
               </Link>
             </Button>
           </div>

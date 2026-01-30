@@ -6,9 +6,17 @@ import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
+import Stack from '@/components/stack';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const stackImages = [
+    'https://picsum.photos/seed/1/500/500',
+    'https://picsum.photos/seed/2/500/500',
+    'https://picsum.photos/seed/3/500/500',
+    'https://picsum.photos/seed/4/500/500',
+  ];
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
@@ -38,6 +46,24 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-center mb-12">
               Quick check
             </h2>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 md:w-80 md:h-80">
+                <Stack
+                  randomRotation={true}
+                  sendToBackOnClick={true}
+                  cards={stackImages.map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`card-${i + 1}`}
+                      className="w-full h-full object-cover"
+                      data-ai-hint="random image"
+                    />
+                  ))}
+                  mobileClickOnly={true}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>

@@ -70,7 +70,7 @@ export function ServicesSection() {
                 <h2 className="text-4xl font-headline text-white text-center md:text-left">
                     Ready to Find Your<br />Dream Property?
                 </h2>
-                <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 rounded-sm px-8 py-6 text-base">
+                <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm rounded-sm px-8 py-6 text-base">
                     <Link href="#">
                         Explore Listings &gt;
                     </Link>

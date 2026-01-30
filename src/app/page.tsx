@@ -6,17 +6,10 @@ import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
-import Stack from '@/components/stack';
+import { TrendingSlider } from '@/components/trending-slider';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const stackImages = [
-    'https://picsum.photos/seed/1/500/500',
-    'https://picsum.photos/seed/2/500/500',
-    'https://picsum.photos/seed/3/500/500',
-    'https://picsum.photos/seed/4/500/500',
-  ];
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
@@ -41,27 +34,22 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
-        <section className="py-16 sm:py-24">
+        <section className="py-16 sm:py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-center mb-12">
-              Quick check
-            </h2>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80">
-                <Stack
-                  randomRotation={true}
-                  sendToBackOnClick={true}
-                  cards={stackImages.map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt={`card-${i + 1}`}
-                      className="w-full h-full object-cover"
-                      data-ai-hint="random image"
-                    />
-                  ))}
-                  mobileClickOnly={true}
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+              <div className="lg:col-span-1">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-neutral-800 mb-6">
+                  Trending
+                </h2>
+                <p className="text-base text-neutral-600 mb-8 max-w-sm">
+                  Discover the homes that are capturing attention in the market. This curated selection showcases the most sought-after properties available right now.
+                </p>
+                <Button size="lg" className="bg-neutral-900 text-white hover:bg-neutral-800 rounded-full px-8 py-6 text-base">
+                  See all
+                </Button>
+              </div>
+              <div className="lg:col-span-2">
+                <TrendingSlider />
               </div>
             </div>
           </div>

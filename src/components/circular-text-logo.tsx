@@ -1,12 +1,13 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import React from 'react';
 
-export function CircularTextLogo() {
+export function CircularTextLogo({ className }: { className?: string }) {
   const text = '• LANDMARKLANE • LANDMARKLANE ';
   
   return (
-    <div className="absolute top-0 right-0 w-36 h-36 -mt-11 -mr-11 sm:w-48 sm:h-48 sm:-mt-14 sm:-mr-14 block pointer-events-none">
+    <div className={cn("absolute w-36 h-36 sm:w-48 sm:h-48 block pointer-events-none", className)}>
         <div className="relative w-full h-full animate-spin-slow">
             <svg viewBox="0 0 100 100" className="w-full h-full">
                 <defs>

@@ -23,20 +23,10 @@ export function Header() {
   ];
 
   const countryNavLinks = [
-      { href: '#', label: 'United States' },
-      { href: '#', label: 'Spain' },
-      { href: '#', label: 'Italy' },
-      { href: '#', label: 'France' },
-      { href: '#', label: 'Portugal' },
-      { href: '#', label: 'Canada' },
-      { href: '#', label: 'United Kingdom' },
-      { href: '#', label: 'Greece' },
-      { href: '#', label: 'Switzerland' },
-      { href: '#', label: 'United Arab Emirates' },
-      { href: '#', label: 'Mexico' },
-      { href: '#', label: 'South Africa' },
-      { href: '#', label: 'Australia' },
-      { href: '#', label: 'Germany' },
+      { href: '#', label: 'Dholera' },
+      { href: '#', label: 'Noida' },
+      { href: '#', label: 'Vrindavan' },
+      { href: '#', label: 'Agra' },
   ];
 
   return (
@@ -75,7 +65,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent
                 side="left"
-                className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl bg-background/80 p-0 backdrop-blur-2xl border border-white/20 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-top-5 data-[state=open]:slide-in-from-top-5"
+                className="inset-y-auto left-4 top-20 h-auto w-auto max-w-[300px] rounded-2xl border border-white/20 bg-background/90 p-0 backdrop-blur-2xl data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-top-5 data-[state=open]:slide-in-from-top-5"
               >
                 <div className="flex flex-col">
                     <SheetHeader className="p-6 pb-4 pr-12">

@@ -1,5 +1,6 @@
 import { Award, Users, Briefcase } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AnimatedGridItem } from './animated-grid-item';
 
 const features = [
   {
@@ -33,17 +34,19 @@ export function WhyOurTeamStandsOut() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center pt-6 bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105">
-              <CardHeader className="items-center p-0 pb-4">
-                <div className="bg-accent/20 p-3 rounded-full mb-4">
-                  <feature.icon className="w-8 h-8 text-accent" />
-                </div>
-                <CardTitle className="text-xl font-headline text-white">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="px-6 pb-6 pt-2">
-                <p className="text-neutral-300 text-base">{feature.description}</p>
-              </CardContent>
-            </Card>
+            <AnimatedGridItem key={index} index={index}>
+              <Card className="text-center h-full pt-6 bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105">
+                <CardHeader className="items-center p-0 pb-4">
+                  <div className="bg-accent/20 p-3 rounded-full mb-4">
+                    <feature.icon className="w-8 h-8 text-accent" />
+                  </div>
+                  <CardTitle className="text-xl font-headline text-white">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-6 pt-2">
+                  <p className="text-neutral-300 text-base">{feature.description}</p>
+                </CardContent>
+              </Card>
+            </AnimatedGridItem>
           ))}
         </div>
       </div>

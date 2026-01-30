@@ -24,7 +24,7 @@ export default function Home() {
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full h-[90vh] md:h-screen">
+        <section className="relative w-full h-screen">
           <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
             <div key={currentSlide}>

@@ -76,7 +76,7 @@ export function HeroSlider({
                 {heroImages.map((images, index) => {
                     return (
                         <CarouselItem key={images.desktop.id} className="overflow-hidden">
-                            <div className="w-full h-[90vh] md:h-screen relative">
+                            <div className="w-full h-screen relative">
                                 {/* Desktop Image */}
                                 <Image
                                     src={images.desktop.src}

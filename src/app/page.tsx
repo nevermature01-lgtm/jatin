@@ -6,9 +6,18 @@ import { Header } from '@/components/header';
 import { HeroSlider } from '@/components/hero-slider';
 import { useState } from 'react';
 import { MovingRibbon } from '@/components/moving-ribbon';
+import Stack from '@/components/stack';
+import Image from 'next/image';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const stackImages = [
+    { src: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=800&auto=format&fit=crop", hint: "modern house" },
+    { src: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop", hint: "suburban home" },
+    { src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop", hint: "luxury villa" },
+    { src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=800&auto=format&fit=crop", hint: "modern architecture" }
+  ];
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
@@ -33,6 +42,36 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
+        <section className="py-16 sm:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-headline text-foreground">Find Your Perfect Escape</h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Flick through our exclusive collection of properties. Your dream home is just a swipe away.
+              </p>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                <Stack
+                  randomRotation={true}
+                  sendToBackOnClick={true}
+                  cards={stackImages.map((image, i) => (
+                    <Image
+                      key={i}
+                      src={image.src}
+                      alt={`card-${i + 1}`}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={image.hint}
+                      sizes="(max-width: 768px) 16rem, (max-width: 1024px) 20rem, 24rem"
+                    />
+                  ))}
+                  mobileClickOnly={true}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

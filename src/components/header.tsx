@@ -133,6 +133,7 @@ export function Header() {
             </nav>
         </div>
       </div>
+      <Separator className={cn('transition-colors', isScrolled ? 'bg-border' : 'bg-white/20')} />
     </header>
   );
 }

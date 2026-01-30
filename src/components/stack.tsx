@@ -19,10 +19,11 @@ function CardRotate({ children, onSendToBack, sensitivity, disableDrag = false }
   function handleDragEnd(_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) {
     if (Math.abs(info.offset.x) > sensitivity || Math.abs(info.offset.y) > sensitivity) {
       onSendToBack();
+    } else {
+      // Reset position after drag for a smooth return if not swiped away
+      x.set(0);
+      y.set(0);
     }
-    // Reset position after drag for a smooth return if not swiped away
-    x.set(0);
-    y.set(0);
   }
 
   if (disableDrag) {
@@ -87,6 +88,7 @@ export default function Stack({
     checkMobile();
     window.addEventListener('resize', checkMobile);
     
+    // Defer random rotation generation to client-side to avoid hydration errors
     if (randomRotation) {
       setRandomRotations(Array.from({ length: cards.length }, () => Math.random() * 6 - 3));
     } else {
@@ -146,7 +148,7 @@ export default function Stack({
       {stack.map((card, index) => {
         const isTopCard = index === stack.length - 1;
         const shouldEnableClick = (sendToBackOnClick || shouldDisableDrag) && isTopCard;
-        const randomRotate = randomRotations[index] || 0;
+        const randomRotate = randomRotations[card.id] || 0;
 
         return (
           <CardRotate

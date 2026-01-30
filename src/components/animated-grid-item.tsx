@@ -14,12 +14,13 @@ export function AnimatedGridItem({
   className,
 }: AnimatedGridItemProps) {
   const variants = {
-    hidden: { opacity: 0, x: index % 2 === 0 ? 50 : -50 },
+    hidden: { opacity: 0, x: index % 2 === 0 ? 100 : -100, scale: 0.9 },
     visible: {
       opacity: 1,
       x: 0,
+      scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.7,
         ease: 'easeOut',
       },
     },

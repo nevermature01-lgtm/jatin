@@ -78,17 +78,23 @@ export default function Stack({
 }: StackProps) {
   const [isMobile, setIsMobile] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [randomRotations, setRandomRotations] = useState<number[]>([]);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
     const checkMobile = () => {
       setIsMobile(window.innerWidth < mobileBreakpoint);
     };
-
     checkMobile();
     window.addEventListener('resize', checkMobile);
+    
+    if (randomRotation) {
+      setRandomRotations(Array.from({ length: cards.length }, () => Math.random() * 6 - 3));
+    } else {
+        setRandomRotations(Array.from({ length: cards.length }, () => 0));
+    }
+
     return () => window.removeEventListener('resize', checkMobile);
-  }, [mobileBreakpoint]);
+  }, [mobileBreakpoint, randomRotation, cards.length]);
 
   const [stack, setStack] = useState(() => {
       return cards.map((content, index) => ({ id: index, content }));
@@ -140,7 +146,7 @@ export default function Stack({
       {stack.map((card, index) => {
         const isTopCard = index === stack.length - 1;
         const shouldEnableClick = (sendToBackOnClick || shouldDisableDrag) && isTopCard;
-        const randomRotate = randomRotation ? Math.random() * 6 - 3 : 0;
+        const randomRotate = randomRotations[index] || 0;
 
         return (
           <CardRotate

@@ -75,14 +75,12 @@ export function AboutUsSection() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pt-10">
             {stats.map((stat, index) => (
-                <div key={index} className="bg-white/10 rounded-lg p-6 text-center flex flex-col items-center justify-center backdrop-blur-md border border-white/20">
-                <div className="flex justify-center mb-4">
-                    <div className="bg-accent rounded-full p-3">
-                    <stat.icon className="h-8 w-8 text-accent-foreground" />
-                    </div>
-                </div>
-                <p className="text-4xl font-headline text-white mb-2">{stat.value}</p>
-                <p className="text-base text-neutral-300">{stat.label}</p>
+                <div key={index} className="group rounded-lg bg-white/10 p-6 text-center backdrop-blur-md border border-white/20 transition-all duration-300 hover:border-accent/30 hover:bg-white/15">
+                  <div className="flex justify-center mb-4">
+                      <stat.icon className="h-10 w-10 text-accent drop-shadow-[0_1px_2px_hsl(var(--accent)/0.7)] transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                  <p className="text-4xl font-headline text-white mb-2">{stat.value}</p>
+                  <p className="text-base text-neutral-300">{stat.label}</p>
                 </div>
             ))}
           </div>

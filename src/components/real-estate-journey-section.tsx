@@ -40,7 +40,7 @@ export function RealEstateJourneySection() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center w-full text-center md:text-left">
           {/* Left Side */}
-          <div className="flex flex-col items-center md:items-start gap-6 mt-8 md:mt-0">
+          <div className="flex flex-col items-center md:items-start gap-6 mt-12 md:mt-0">
             <p className="text-sm font-bold tracking-widest uppercase">
               Discover More
             </p>

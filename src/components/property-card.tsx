@@ -22,9 +22,9 @@ export function PropertyCard({ property }: { property: Property }) {
           </div>
         </div>
         <div className="pt-4">
-          <p className="text-lg font-bold text-neutral-900">{formatInr(property.price)}</p>
-          <p className="text-base text-neutral-800 mt-1 truncate">{property.title}</p>
-          <p className="text-sm text-neutral-600 truncate">{property.address}</p>
+          <p className="text-lg font-bold text-white">{formatInr(property.price)}</p>
+          <p className="text-base text-neutral-200 mt-1 truncate">{property.title}</p>
+          <p className="text-sm text-neutral-400 truncate">{property.address}</p>
         </div>
       </CardContent>
     </Card>

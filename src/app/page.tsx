@@ -13,9 +13,9 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="flex min-h-screen w-screen flex-col bg-background">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main className="flex-1 w-screen">
+      <main className="flex-1">
         <section className="relative w-screen h-[95vh] overflow-x-hidden">
           <HeroSlider onSlideChange={setCurrentSlide} />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
@@ -35,17 +35,17 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
-        <section className="py-16 sm:py-24 bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
+        <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-1">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-neutral-800 mb-6">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-white mb-6">
                   Trending
                 </h2>
-                <p className="text-base text-neutral-600 mb-8 max-w-sm">
+                <p className="text-base text-neutral-300 mb-8 max-w-sm">
                   Discover the Property that are capturing attention in the market.
                 </p>
-                <Button size="lg" className="bg-neutral-900 text-white hover:bg-neutral-800 rounded-full px-8 py-6 text-base">
+                <Button size="lg" className="bg-white text-neutral-900 hover:bg-neutral-200 rounded-full px-8 py-6 text-base">
                   See all
                 </Button>
               </div>

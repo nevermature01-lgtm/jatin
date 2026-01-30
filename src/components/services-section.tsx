@@ -37,26 +37,26 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-neutral-500 mb-4">
+            <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
                 OUR SERVICES
             </p>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-neutral-800 mb-12">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-white mb-12">
                 Expert Services for <em className="italic">Every</em>
                 <br />
                 Real Estate <em className="italic">Journey</em>
             </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-neutral-300">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-neutral-700">
           {services.map((service, index) => (
             <AnimatedGridItem
               key={service.title}
               index={index}
-              className={`group p-6 sm:p-8 border-b border-neutral-300 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-card
-                ${ index % 3 !== 2 ? 'md:border-r md:border-neutral-300' : '' } 
+              className={`group p-6 sm:p-8 border-b border-neutral-700 transition-all duration-300 ease-in-out md:hover:shadow-xl md:hover:bg-gray-800
+                ${ index % 3 !== 2 ? 'md:border-r md:border-neutral-700' : '' } 
                 ${ index >= services.length - 3 ? 'md:border-b-0' : '' }`}
             >
               <ServiceCard {...service} />

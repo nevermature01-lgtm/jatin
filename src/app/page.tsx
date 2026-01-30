@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </section>
         <MovingRibbon />
-        <section className="py-16 sm:py-24 bg-gradient-to-br from-amber-100 to-amber-300">
+        <section className="py-16 sm:py-24 bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-1">

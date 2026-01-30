@@ -37,60 +37,6 @@ export default function Home() {
                 Your new life of elegance and comfort awaits among our curated collection of luxury homes.
               </p>
             </div>
-
-            <form className="mt-12 w-full max-w-4xl rounded-full bg-black/30 p-2 shadow-2xl backdrop-blur-md animate-slide-up-fast border border-white/20">
-                <div className="flex flex-col md:flex-row items-center">
-                    <div className="relative w-full md:flex-1 flex items-center">
-                        <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/70 pointer-events-none" />
-                        <Input
-                        id="location"
-                        placeholder="City, Region, Country"
-                        className="h-14 bg-transparent border-none text-white placeholder:text-white/70 focus-visible:ring-0 focus-visible:ring-offset-0 pl-12 text-base w-full"
-                        />
-                    </div>
-                    
-                    <div className="w-full h-px md:h-8 md:w-px bg-white/20 my-2 md:my-0" />
-
-                    <div className="w-full md:w-auto">
-                        <Select>
-                            <SelectTrigger className="h-14 w-full md:w-48 bg-transparent border-none text-white/70 focus:ring-0 focus:ring-offset-0 text-base justify-start px-4">
-                                <SelectValue placeholder="Any Price" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="1m">$0 - $1,000,000</SelectItem>
-                                <SelectItem value="3m">$1,000,000 - $3,000,000</SelectItem>
-                                <SelectItem value="5m">$3,000,000 - $5,000,000</SelectItem>
-                                <SelectItem value="10m">$5,000,000 - $10,000,000</SelectItem>
-                                <SelectItem value="10m+">$10,000,000+</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-                    
-                    <div className="w-full h-px md:h-8 md:w-px bg-white/20 my-2 md:my-0" />
-                    
-                    <div className="w-full md:w-auto">
-                        <Select>
-                            <SelectTrigger className="h-14 w-full md:w-36 bg-transparent border-none text-white/70 focus:ring-0 focus:ring-offset-0 text-base justify-start px-4">
-                                <SelectValue placeholder="Any Beds" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="1">1+</SelectItem>
-                                <SelectItem value="2">2+</SelectItem>
-                                <SelectItem value="3">3+</SelectItem>
-                                <SelectItem value="4">4+</SelectItem>
-                                <SelectItem value="5">5+</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-                    
-                    <div className="w-full md:w-auto p-1 md:p-0 md:pr-1">
-                        <Button type="submit" className="w-full md:w-auto h-12 rounded-full text-base bg-primary hover:bg-primary/90 px-6">
-                            <Search className="mr-2 h-4 w-4" />
-                            Search
-                        </Button>
-                    </div>
-                </div>
-            </form>
           </div>
         </section>
 

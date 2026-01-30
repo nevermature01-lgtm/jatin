@@ -15,6 +15,7 @@ export function CircularText({ icon: Icon, value, label, index }: CircularTextPr
   const animationDuration = 15 + index * 5;
   // Alternate animation direction
   const animationDirection = index % 2 === 0 ? 'normal' : 'reverse';
+  const rotatingText = 'LANDMARKLANE • '.repeat(3);
 
   return (
     <div className="relative w-40 h-40 sm:w-48 sm:h-48 flex items-center justify-center group">
@@ -36,7 +37,7 @@ export function CircularText({ icon: Icon, value, label, index }: CircularTextPr
           </defs>
           <text dy="-1" className="text-xs font-semibold uppercase tracking-wider fill-current">
             <textPath href={`#${uniqueId}`} startOffset="50%" textAnchor="middle">
-              {label.split('').join(' ')}
+              {rotatingText}
             </textPath>
           </text>
         </svg>
@@ -46,6 +47,7 @@ export function CircularText({ icon: Icon, value, label, index }: CircularTextPr
       <div className="text-center transition-transform duration-300 group-hover:scale-110">
         <Icon className="h-8 w-8 sm:h-10 sm:w-10 text-accent mx-auto mb-2 drop-shadow-[0_1px_2px_hsl(var(--accent)/0.7)]" />
         <p className="text-3xl sm:text-4xl font-headline text-white">{value}</p>
+        <p className="text-xs text-neutral-300 mt-1 max-w-24 mx-auto">{label}</p>
       </div>
     </div>
   );

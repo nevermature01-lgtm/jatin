@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -119,6 +119,24 @@ export function PropertyCard({ property }: { property: Property }) {
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <Coffee className="h-4 w-4 text-accent"/>
                   <span>Cafeteria</span>
+                </div>
+              )}
+              {property.amenities.includes('Metro Connectivity') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <TramFront className="h-4 w-4 text-accent"/>
+                  <span>Metro Connectivity</span>
+                </div>
+              )}
+              {property.amenities.includes('Food Court') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Coffee className="h-4 w-4 text-accent"/>
+                  <span>Food Court</span>
+                </div>
+              )}
+              {property.amenities.includes('Retail Spaces') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Store className="h-4 w-4 text-accent"/>
+                  <span>Retail Spaces</span>
                 </div>
               )}
             </div>

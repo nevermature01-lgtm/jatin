@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { FaqSection } from '@/components/faq-section';
 
 type TeamMember = {
   name: string;
@@ -119,6 +120,7 @@ export default function LeadershipPage() {
             </div>
           </div>
         </section>
+        <FaqSection />
       </main>
       <Footer />
     </div>

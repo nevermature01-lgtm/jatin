@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <div className="max-w-3xl mx-auto text-center">
                     <div>
                         <h2 className="text-3xl sm:text-4xl font-headline text-white mb-6">
-                            Blending Modern Design and Tradition
+                            Built on Trust. Focused on Your Future.
                         </h2>
                         <div className="space-y-4 text-neutral-300">
                              <p>

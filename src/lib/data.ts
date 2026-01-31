@@ -87,4 +87,15 @@ export const properties: Property[] = [
     area: 2500,
     image: findImage('property-6'),
   },
+  {
+    id: '7',
+    title: 'Retail Shop- Bhutani Cyberthum',
+    address: 'Noida, Sector 140A',
+    price: '₹35.18 Lacs*',
+    beds: 0,
+    baths: 0,
+    area: 0,
+    image: findImage('property-7'),
+    tags: ['Retail', 'Under Construction'],
+  }
 ];

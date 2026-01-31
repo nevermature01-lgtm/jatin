@@ -27,10 +27,9 @@
     },
     {
       "id": "property-5",
-      "description": "Beachfront property with ocean view",
-      "imageUrl": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTg0NjY1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "mobileImageUrl": "https://picsum.photos/seed/prop5m/600/800",
-      "imageHint": "beach house"
+      "description": "Bhutani Cyberthum",
+      "imageUrl": "/bhutani-cyberthum-hS-LHlMM.jpg",
+      "imageHint": "commercial building"
     },
     {
       "id": "property-6",

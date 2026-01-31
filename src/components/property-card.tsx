@@ -22,6 +22,18 @@ export function PropertyCard({ property }: { property: Property }) {
           <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <PlayCircle className="w-16 h-16 text-white/80" />
           </div>
+          {property.tags && (
+            <div className="absolute top-2 left-2 flex flex-wrap gap-2">
+              {property.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs font-semibold text-white bg-black/40 backdrop-blur-sm rounded-full px-3 py-1"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <div className="pt-4">
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>

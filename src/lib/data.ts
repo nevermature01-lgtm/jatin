@@ -10,6 +10,7 @@ export type Property = {
   baths: number;
   area: number; // in sqft
   image: ImagePlaceholder;
+  tags?: string[];
 };
 
 const findImage = (id: string) => {
@@ -50,6 +51,7 @@ export const properties: Property[] = [
     baths: 0,
     area: 1000,
     image: findImage('property-3'),
+    tags: ['Retail', 'Under Construction'],
   },
   {
     id: '4',

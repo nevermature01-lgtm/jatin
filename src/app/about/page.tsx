@@ -26,31 +26,7 @@ export default function AboutPage() {
     <div className="flex min-h-screen flex-col bg-gray-900 text-white">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[60vh] flex items-center justify-center text-center">
-            <div className="absolute inset-0">
-                <Image
-                    src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Interior of a modern kitchen"
-                    fill
-                    className="object-cover"
-                    data-ai-hint="modern kitchen"
-                    sizes="100vw"
-                />
-                <div className="absolute inset-0 bg-black/60" />
-            </div>
-            <div className="relative z-10 p-4 mt-20">
-                <p className="text-sm font-semibold uppercase tracking-widest text-neutral-300 mb-4">
-                    About LANDMARKLANE
-                </p>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline">
-                    Building Your Future,
-                    <br />
-                    One Landmark at a Time
-                </h1>
-            </div>
-        </section>
-
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950 pt-36">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center">
                     <div>

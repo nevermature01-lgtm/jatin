@@ -64,7 +64,7 @@ export function TrendingSlider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute -top-16 right-0 hidden sm:flex items-center gap-2">
+        <div className="absolute -top-16 right-0 flex items-center gap-2">
             <CarouselPrevious className="relative -left-0 -top-0 translate-y-0 w-10 h-10 rounded-full bg-gray-800 border-gray-700 hover:bg-gray-700 text-white" />
             <CarouselNext className="relative -right-0 -top-0 translate-y-0 w-10 h-10 rounded-full bg-gray-800 border-gray-700 hover:bg-gray-700 text-white" />
         </div>

@@ -45,7 +45,7 @@ export const properties: Property[] = [
     id: '8',
     title: 'Dholera Smart City Plots',
     address: 'Dholera, Gujarat',
-    price: '₹10 Lacs*',
+    price: '₹25 Lakh*',
     beds: 0,
     baths: 0,
     area: 1000,

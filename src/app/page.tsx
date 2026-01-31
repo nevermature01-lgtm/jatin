@@ -33,7 +33,7 @@ export default function Home() {
               </p>
             </div>
             <Button asChild variant="outline" className="rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:hidden absolute bottom-40">
-              <Link href="#">
+              <Link href="tel:9528199631">
                 Contact us
               </Link>
             </Button>

@@ -44,7 +44,7 @@ export function Footer() {
                 <li><Link href="#" className="text-sm hover:text-white transition-colors">About Us</Link></li>
                 <li><Link href="#" className="text-sm hover:text-white transition-colors">Properties</Link></li>
                 <li><Link href="#" className="text-sm hover:text-white transition-colors">Services</Link></li>
-                <li><Link href="#" className="text-sm hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="tel:9528199631" className="text-sm hover:text-white transition-colors">Contact</Link></li>
                 <li><Link href="#" className="text-sm hover:text-white transition-colors">Blog</Link></li>
               </ul>
             </div>
@@ -72,7 +72,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-accent" />
-                <span>+1 (800) 123-4567</span>
+                <a href="tel:9528199631">9528199631</a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-accent" />

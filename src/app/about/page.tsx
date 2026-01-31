@@ -26,7 +26,7 @@ export default function AboutPage() {
     <div className="flex min-h-screen flex-col bg-gray-900 text-white">
       <Header />
       <main className="flex-1">
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950 pt-36">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950 pt-40">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center">
                     <div>

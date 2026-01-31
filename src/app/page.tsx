@@ -50,8 +50,8 @@ export default function Home() {
                 <p className="text-base text-neutral-300 mb-8 max-w-sm">
                   Discover the Property that are capturing attention in the market.
                 </p>
-                <Button size="lg" className="bg-white text-neutral-900 hover:bg-neutral-200 rounded-full px-8 py-6 text-base">
-                  See all
+                <Button asChild size="lg" className="bg-white text-neutral-900 hover:bg-neutral-200 rounded-full px-8 py-6 text-base">
+                  <Link href="/properties">See all</Link>
                 </Button>
               </div>
               <div className="lg:col-span-2">

@@ -10,7 +10,7 @@ const teamMembers = [
     avatarId: 'avatar-1',
   },
   {
-    name: 'Priya Singh',
+    name: 'Shashank Jha',
     title: 'Chief Real Estate Officer',
     avatarId: 'avatar-2',
   },

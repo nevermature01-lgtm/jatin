@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { Suspense, useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { PropertyCard } from '@/components/property-card';
@@ -14,13 +15,23 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Search } from 'lucide-react';
+import { Skeleton } from '@/components/ui/skeleton';
 
-export default function PropertiesPage() {
+function PropertiesPageContent() {
+  const searchParams = useSearchParams();
+  const cityFromQuery = searchParams.get('city');
+
   const [location, setLocation] = useState('');
   const [priceRange, setPriceRange] = useState('all');
-  const [city, setCity] = useState('all');
+  const [city, setCity] = useState(cityFromQuery || 'all');
 
-  const cities = useMemo(() => ['all', ...Array.from(new Set(properties.map((p) => p.address.split(',')[0])))], []);
+  useEffect(() => {
+    if (cityFromQuery) {
+      setCity(cityFromQuery);
+    }
+  }, [cityFromQuery]);
+
+  const cities = useMemo(() => ['all', ...Array.from(new Set(properties.map((p) => p.address.split(',')[0].trim())))], []);
 
   const filteredProperties = useMemo(() => {
     return properties.filter((property) => {
@@ -33,8 +44,6 @@ export default function PropertiesPage() {
       // Price filter
       const matchesPrice = (() => {
         if (priceRange === 'all') return true;
-        // If price is a string (e.g., "₹1.40 Cr*"), we can't easily filter.
-        // For now, we'll include it if it's not a number, which means it will pass the filter.
         if (typeof property.price !== 'number') return true;
         
         const [min, max] = priceRange.split('-').map(Number);
@@ -42,12 +51,12 @@ export default function PropertiesPage() {
         if (max) {
           return property.price >= min && property.price <= max;
         }
-        // Handle open-ended range (e.g., "20000000")
         return property.price >= min;
       })();
 
       // City filter
-      const matchesCity = city === 'all' || property.address.split(',')[0] === city;
+      const propertyCity = property.address.split(',')[0].trim();
+      const matchesCity = city === 'all' || propertyCity === city;
 
       return matchesLocation && matchesPrice && matchesCity;
     });
@@ -134,4 +143,49 @@ export default function PropertiesPage() {
       <Footer />
     </div>
   );
+}
+
+function PropertiesPageSkeleton() {
+  return (
+    <div className="flex min-h-screen flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white">
+      <Header />
+      <main className="flex-1 pt-36">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center mb-12">
+            <Skeleton className="h-12 w-3/4 mx-auto" />
+            <Skeleton className="h-6 w-1/2 mx-auto mt-4" />
+          </div>
+
+          <div className="sticky top-[130px] z-40 py-4 mb-8">
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 rounded-lg border border-white/10 bg-black/20">
+                <Skeleton className="h-10 w-full" />
+                <Skeleton className="h-10 w-full" />
+                <Skeleton className="h-10 w-full" />
+              </div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="space-y-4">
+                <Skeleton className="aspect-[4/3] w-full" />
+                <Skeleton className="h-6 w-3/4" />
+                <Skeleton className="h-5 w-1/2" />
+                <Skeleton className="h-10 w-full" />
+              </div>
+            ))}
+          </div>
+
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default function PropertiesPage() {
+    return (
+        <Suspense fallback={<PropertiesPageSkeleton />}>
+            <PropertiesPageContent />
+        </Suspense>
+    )
 }

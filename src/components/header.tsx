@@ -23,12 +23,12 @@ export function Header() {
   ];
 
   const countryNavLinks = [
-      { href: '#', label: 'Dholera' },
-      { href: '#', label: 'Noida' },
-      { href: '#', label: 'Vrindavan' },
-      { href: '#', label: 'Agra' },
-      { href: '#', label: 'Ahmedabad' },
-      { href: '#', label: 'Goa' },
+      { href: '/properties?city=Dholera', label: 'Dholera' },
+      { href: '/properties?city=Noida', label: 'Noida' },
+      { href: '/properties?city=Vrindavan', label: 'Vrindavan' },
+      { href: '/properties?city=Agra', label: 'Agra' },
+      { href: '/properties?city=Ahmedabad', label: 'Ahmedabad' },
+      { href: '/properties?city=Goa', label: 'Goa' },
   ];
 
   return (

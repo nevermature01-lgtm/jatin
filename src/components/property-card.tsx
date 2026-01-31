@@ -3,8 +3,7 @@ import type { Property } from '@/lib/data';
 import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront, PenTool, Building2, Building, Club, Sparkles } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront, PenTool, Building2, Building, Club, Sparkles, Phone } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -185,9 +184,10 @@ export function PropertyCard({ property }: { property: Property }) {
           )}
 
           <Button asChild variant="outline" className="mt-6 md:mt-auto w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
-            <Link href="#">
-              View Details
-            </Link>
+            <a href="tel:9528199631">
+              <Phone />
+              Call Now
+            </a>
           </Button>
         </div>
       </CardContent>

@@ -2,7 +2,6 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { cn } from '@/lib/utils';
 
 const teamMembers = [
   {
@@ -51,19 +50,12 @@ export default function LeadershipPage() {
         <section className="py-16 sm:py-24 bg-gray-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-              {teamMembers.map((member, index) => {
+              {teamMembers.map((member) => {
                 const avatarImage = PlaceHolderImages.find(p => p.id === member.avatarId);
-                const animationDirection = index % 2 === 0 ? '' : '[animation-direction:reverse]';
                 
                 return (
                   <div key={member.name} className="group flex flex-col items-center text-center p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 hover:shadow-2xl hover:shadow-accent/10">
                     <div className="relative w-40 h-40 mb-6">
-                        {/* Animated fluid border */}
-                        <div className={cn(
-                            "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,#facc15,transparent_50%),radial-gradient(circle_at_80%_20%,#f59e0b,transparent_50%)] blur-2xl opacity-90 animate-bg-pan-smoke [background-size:400%_400%] rounded-full",
-                            animationDirection
-                        )} style={{ animationDuration: `${15 + index * 5}s` }} />
-
                         {/* Glass tube container (the visible border) */}
                         <div className="absolute inset-0 rounded-full border-2 border-white/10" />
 

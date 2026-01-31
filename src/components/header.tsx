@@ -26,7 +26,6 @@ export function Header() {
       { href: '/properties?city=Dholera', label: 'Dholera' },
       { href: '/properties?city=Noida', label: 'Noida' },
       { href: '/properties?city=Vrindavan', label: 'Vrindavan' },
-      { href: '/properties?city=Agra', label: 'Agra' },
       { href: '/properties?city=Ahmedabad', label: 'Ahmedabad' },
       { href: '/properties?city=Goa', label: 'Goa' },
   ];

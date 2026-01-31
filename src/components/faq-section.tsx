@@ -10,29 +10,29 @@ import { motion } from 'framer-motion';
 
 const faqs = [
   {
-    question: 'What types of properties do you specialize in?',
+    question: 'What types of properties do you deal in?',
     answer:
-      'We specialize in a wide range of luxury properties, including waterfront estates, modern villas, downtown penthouses, and private islands. Our portfolio is curated to meet the highest standards of quality and elegance.',
+      'We specialise in residential plots, premium homes, and high-value investment properties in prime locations.',
   },
   {
-    question: 'How can I schedule a property viewing?',
+    question: 'How can I book a property visit or consultation?',
     answer:
-      'You can schedule a viewing by contacting us through the contact form on our website or by calling our office directly. Our agents will be happy to arrange a private tour at your convenience.',
+      'You can contact us via phone, email, or the website form. Our team will schedule a visit at your convenience.',
   },
   {
-    question: 'Do you offer property management services?',
+    question: 'Do you help with legal checks and documentation?',
     answer:
-      'Yes, we provide comprehensive property management services to ensure your investment is well-maintained and profitable. Our services include tenant screening, rent collection, maintenance, and regular inspections.',
+      'Yes, we assist with property verification and documentation to ensure a safe and smooth transaction.',
   },
   {
-    question: 'What is the process for selling my property with you?',
+    question: 'Do you work with both buyers and sellers?',
     answer:
-      "Our selling process begins with a detailed property valuation and market analysis. We then create a tailored marketing strategy, handle all negotiations, and guide you through the closing process to ensure a seamless transaction.",
+      'Yes, we support buyers in finding the right property and help sellers market and sell their property effectively.',
   },
   {
-    question: 'Are your listings exclusive?',
+    question: 'Do you offer real-estate investment advice?',
     answer:
-      'Many of our listings are exclusive to LANDMARKLANE, offering our clients unique opportunities not available elsewhere. We also have access to a broad network of properties through our partnerships.',
+      'Yes, we provide market insights and guidance to help clients make informed investment decisions.',
   },
 ];
 

@@ -18,7 +18,9 @@ import { Search } from 'lucide-react';
 export default function PropertiesPage() {
   const [location, setLocation] = useState('');
   const [priceRange, setPriceRange] = useState('all');
-  const [beds, setBeds] = useState('all');
+  const [city, setCity] = useState('all');
+
+  const cities = useMemo(() => ['all', ...Array.from(new Set(properties.map((p) => p.address.split(',')[0])))], []);
 
   const filteredProperties = useMemo(() => {
     return properties.filter((property) => {
@@ -44,19 +46,12 @@ export default function PropertiesPage() {
         return property.price >= min;
       })();
 
-      // Beds filter
-      const matchesBeds = (() => {
-        if (beds === 'all') return true;
-        const numBeds = Number(beds);
-        if (numBeds === 4) { // "4+" beds
-          return property.beds >= 4;
-        }
-        return property.beds === numBeds;
-      })();
+      // City filter
+      const matchesCity = city === 'all' || property.address.split(',')[0] === city;
 
-      return matchesLocation && matchesPrice && matchesBeds;
+      return matchesLocation && matchesPrice && matchesCity;
     });
-  }, [location, priceRange, beds]);
+  }, [location, priceRange, city]);
   
   const priceRanges = [
     { value: 'all', label: 'Any Price' },
@@ -64,15 +59,6 @@ export default function PropertiesPage() {
     { value: '5000000-10000000', label: '₹50 Lacs - ₹1 Cr' },
     { value: '10000000-20000000', label: '₹1 Cr - ₹2 Cr' },
     { value: '20000000', label: 'Over ₹2 Cr' },
-  ];
-
-  const bedOptions = [
-    { value: 'all', label: 'Any Beds' },
-    { value: '0', label: 'Plot / Commercial' },
-    { value: '1', label: '1 Bed' },
-    { value: '2', label: '2 Beds' },
-    { value: '3', label: '3 Beds' },
-    { value: '4', label: '4+ Beds' },
   ];
 
   return (
@@ -91,12 +77,12 @@ export default function PropertiesPage() {
 
           {/* Search and Filter Bar */}
           <div className="sticky top-[130px] z-40 bg-gray-900/80 backdrop-blur-sm py-4 mb-8 rounded-lg">
-             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 rounded-lg border border-white/10 bg-black/20">
-                <div className="relative md:col-span-2">
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 rounded-lg border border-white/10 bg-black/20">
+                <div className="relative">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 pointer-events-none" />
                   <Input
                     type="text"
-                    placeholder="Search by location, city, or property name..."
+                    placeholder="Search by name, address..."
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     className="w-full bg-white/5 border-white/20 text-white pl-10 placeholder:text-neutral-400"
@@ -114,14 +100,14 @@ export default function PropertiesPage() {
                     ))}
                   </SelectContent>
                 </Select>
-                <Select value={beds} onValueChange={setBeds}>
+                <Select value={city} onValueChange={setCity}>
                   <SelectTrigger className="w-full bg-white/5 border-white/20 text-white">
-                    <SelectValue placeholder="Beds" />
+                    <SelectValue placeholder="Filter by cities" />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 text-white border-gray-700">
-                    {bedOptions.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
+                    {cities.map((c) => (
+                      <SelectItem key={c} value={c}>
+                        {c === 'all' ? 'All Cities' : c}
                       </SelectItem>
                     ))}
                   </SelectContent>

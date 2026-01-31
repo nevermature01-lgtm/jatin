@@ -3,6 +3,8 @@ import { PlayCircle } from 'lucide-react';
 import type { Property } from '@/lib/data';
 import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -25,6 +27,11 @@ export function PropertyCard({ property }: { property: Property }) {
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>
           <p className="text-base text-neutral-200 mt-1 truncate">{property.title}</p>
           <p className="text-sm text-neutral-400 truncate">{property.address}</p>
+          <Button asChild variant="outline" className="mt-4 w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
+            <Link href="#">
+              View Details
+            </Link>
+          </Button>
         </div>
       </CardContent>
     </Card>

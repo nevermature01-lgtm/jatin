@@ -15,7 +15,7 @@ const teamMembers = [
     avatarId: 'avatar-2',
   },
   {
-    name: 'Rohan Gupta',
+    name: 'Kirti Kiran',
     title: 'Head of Sales',
     avatarId: 'avatar-3',
   },

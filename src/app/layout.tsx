@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'LANDMARKLANE',
   description: 'Find your dream luxury home with LANDMARKLANE.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.ico',
   },
 };
 

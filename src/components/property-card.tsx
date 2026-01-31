@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -35,7 +35,10 @@ export function PropertyCard({ property }: { property: Property }) {
         <div className="pt-4">
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>
           <p className="text-base text-neutral-200 mt-1">{property.title}</p>
-          <p className="text-sm text-neutral-400">{property.address}</p>
+          <p className="flex items-center gap-2 text-sm text-neutral-400 mt-1">
+            <MapPin className="h-4 w-4" />
+            <span>{property.address}</span>
+          </p>
 
           {property.description && (
             <p className="text-sm text-neutral-300 mt-2">{property.description}</p>

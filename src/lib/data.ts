@@ -40,7 +40,7 @@ export const properties: Property[] = [
     bathsDisplay: '2-3 Baths',
     areaDisplay: '1200-1800 sq ft',
     image: findImage('property-9'),
-    tags: ['Residential', 'Pre-Launch', 'Swimming Pool', 'Gym', 'Security', '+3 more'],
+    tags: ['Residential', 'Pre-Launch', 'Swimming Pool', 'Gym', 'Security'],
     amenities: ['Swimming Pool', 'Gym', 'Security'],
   },
   {
@@ -54,7 +54,7 @@ export const properties: Property[] = [
     description: "Investment opportunity in India's first planned smart city with excellent growth potential.",
     areaDisplay: '1000-5000 sq ft',
     image: findImage('property-8'),
-    tags: ['Land', 'Investment', 'Smart City', 'DMICDC Infrastructure', '+3 more'],
+    tags: ['Land', 'Investment', 'Smart City', 'DMICDC Infrastructure'],
     amenities: ['Smart City', 'DMICDC Infrastructure'],
   },
   {
@@ -70,7 +70,7 @@ export const properties: Property[] = [
     bathsDisplay: 'Common',
     areaDisplay: '500-2000 sq ft',
     image: findImage('property-7'),
-    tags: ['Office Space', 'High-speed Elevators', 'Central AC', 'Power Backup', '+3 more'],
+    tags: ['Office Space', 'High-speed Elevators', 'Central AC', 'Power Backup'],
     amenities: ['High-speed Elevators', 'Central AC', 'Power Backup'],
   },
   {
@@ -86,7 +86,7 @@ export const properties: Property[] = [
     bathsDisplay: 'Common',
     areaDisplay: '800-3000 sq ft',
     image: findImage('property-1'),
-    tags: ['Office Space', 'IT Infrastructure', 'Conference Rooms', 'Cafeteria', '+3 more'],
+    tags: ['Office Space', 'IT Infrastructure', 'Conference Rooms', 'Cafeteria'],
     amenities: ['IT Infrastructure', 'Conference Rooms', 'Cafeteria'],
   },
   {
@@ -102,7 +102,7 @@ export const properties: Property[] = [
     bathsDisplay: 'Common',
     areaDisplay: '300-1500 sq ft',
     image: findImage('property-2'),
-    tags: ['Retail/Office', 'Metro Connectivity', 'Food Court', 'Retail Outlets', '+3 more'],
+    tags: ['Retail/Office', 'Metro Connectivity', 'Food Court', 'Retail Outlets'],
     amenities: ['Metro Connectivity', 'Food Court', 'Retail Outlets'],
   },
   {
@@ -118,7 +118,7 @@ export const properties: Property[] = [
     bathsDisplay: 'Common',
     areaDisplay: '400-1800 sq ft',
     image: findImage('property-3'),
-    tags: ['Modern Design', 'Retail Outlets', 'Office Spaces', '+3 more'],
+    tags: ['Modern Design', 'Retail Outlets', 'Office Spaces'],
     amenities: ['Modern Design', 'Retail Outlets', 'Office Spaces'],
   },
   {
@@ -134,7 +134,7 @@ export const properties: Property[] = [
     bathsDisplay: 'Common',
     areaDisplay: '600-2500 sq ft',
     image: findImage('property-4'),
-    tags: ['Prime Location', 'Retail Spaces', 'Office Spaces', '+3 more'],
+    tags: ['Prime Location', 'Retail Outlets', 'Office Spaces'],
     amenities: ['Retail Outlets', 'Office Spaces'],
   },
   {
@@ -150,7 +150,7 @@ export const properties: Property[] = [
     bathsDisplay: '2-3 Baths',
     areaDisplay: '1100-1600 sq ft',
     image: findImage('property-5'),
-    tags: ['Swimming Pool', 'Gym', 'Clubhouse', '+3 more'],
+    tags: ['Swimming Pool', 'Gym', 'Clubhouse'],
     amenities: ['Swimming Pool', 'Gym', 'Clubhouse'],
   },
   {
@@ -166,7 +166,7 @@ export const properties: Property[] = [
     bathsDisplay: '2-4 Baths',
     areaDisplay: '1300-2200 sq ft',
     image: findImage('property-10'),
-    tags: ['Beach Access', 'Swimming Pool', 'Spa', '+3 more'],
+    tags: ['Beach Access', 'Swimming Pool', 'Spa'],
     amenities: ['Beach Access', 'Swimming Pool', 'Spa'],
   }
 ];

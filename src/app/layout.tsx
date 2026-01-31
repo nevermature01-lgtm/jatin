@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   title: 'LANDMARKLANE',
   description: 'Find your dream luxury home with LANDMARKLANE.',
   icons: {
-    icon: '/favicon.ico',
+    icon: {
+      url: '/favicon.ico',
+      sizes: 'any',
+      type: 'image/x-icon',
+    },
   },
 };
 

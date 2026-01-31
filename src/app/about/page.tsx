@@ -34,7 +34,7 @@ export default function AboutPage() {
                 <div className="max-w-3xl mx-auto text-center">
                     <div>
                         <h2 className="text-3xl sm:text-4xl font-headline text-white mb-6">
-                            Built on Trust. Focused on Your Future.
+                            Where Trust Meets Real Estate Expertise
                         </h2>
                         <div className="space-y-4 text-neutral-300">
                              <p>

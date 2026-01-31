@@ -54,7 +54,7 @@ export const properties: Property[] = [
     description: "Investment opportunity in India's first planned smart city with excellent growth potential.",
     areaDisplay: '1000-5000 sq ft',
     image: findImage('property-8'),
-    tags: ['Land', 'Smart City', 'Investment'],
+    tags: ['Land', 'Investment', 'Smart City', 'DMICDC Infrastructure', '+3 more'],
   },
   {
     id: '7',

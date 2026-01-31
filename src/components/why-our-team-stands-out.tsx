@@ -37,7 +37,7 @@ export function WhyOurTeamStandsOut() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <AnimatedGridItem key={index} index={index}>
-              <Card className="mx-auto w-full md:max-w-none text-center md:h-full flex flex-col justify-center pt-4 bg-accent transition-all duration-300 hover:scale-105">
+              <Card className="mx-auto w-full md:max-w-none text-center md:h-full flex flex-col justify-center pt-4 bg-gradient-to-br from-amber-400 to-amber-600 transition-all duration-300 hover:scale-105">
                 <CardHeader className="items-center p-0 pb-4">
                   <div className="bg-black/10 p-3 rounded-full mb-4">
                     <feature.icon className="w-8 h-8 text-white" />

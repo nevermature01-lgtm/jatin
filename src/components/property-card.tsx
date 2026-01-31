@@ -4,6 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -35,6 +36,51 @@ export function PropertyCard({ property }: { property: Property }) {
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>
           <p className="text-base text-neutral-200 mt-1 truncate">{property.title}</p>
           <p className="text-sm text-neutral-400 truncate">{property.address}</p>
+
+          <div className="mt-3 flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-neutral-300">
+            {(property.beds > 0 || property.bedsDisplay) && (
+              <div className="flex items-center gap-2">
+                <BedDouble className="h-4 w-4" />
+                <span>{property.bedsDisplay || `${property.beds} BHK`}</span>
+              </div>
+            )}
+            {(property.baths > 0 || property.bathsDisplay) && (
+              <div className="flex items-center gap-2">
+                <Bath className="h-4 w-4" />
+                <span>{property.bathsDisplay || `${property.baths} Baths`}</span>
+              </div>
+            )}
+            {(property.area > 0 || property.areaDisplay) && (
+              <div className="flex items-center gap-2">
+                <Ruler className="h-4 w-4" />
+                <span>{property.areaDisplay || `${property.area} sq ft`}</span>
+              </div>
+            )}
+          </div>
+          
+          {property.amenities && property.amenities.length > 0 && (
+            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+              {property.amenities.includes('Swimming Pool') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Waves className="h-4 w-4 text-accent"/>
+                  <span>Swimming Pool</span>
+                </div>
+              )}
+              {property.amenities.includes('Gym') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Dumbbell className="h-4 w-4 text-accent"/>
+                  <span>Gym</span>
+                </div>
+              )}
+              {property.amenities.includes('Security') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Shield className="h-4 w-4 text-accent"/>
+                  <span>Security</span>
+                </div>
+              )}
+            </div>
+          )}
+
           <Button asChild variant="outline" className="mt-4 w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
             <Link href="#">
               View Details

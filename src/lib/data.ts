@@ -11,6 +11,10 @@ export type Property = {
   area: number; // in sqft
   image: ImagePlaceholder;
   tags?: string[];
+  bedsDisplay?: string;
+  bathsDisplay?: string;
+  areaDisplay?: string;
+  amenities?: string[];
 };
 
 const findImage = (id: string) => {
@@ -27,11 +31,15 @@ export const properties: Property[] = [
     title: 'HOABL Vrindavan Global',
     address: 'Vrindavan, Mathura',
     price: '₹1.40 Cr*',
-    beds: 0,
-    baths: 0,
-    area: 0,
+    beds: 2,
+    baths: 2,
+    area: 1200,
+    bedsDisplay: '2-3 BHK',
+    bathsDisplay: '2-3 Baths',
+    areaDisplay: '1200-1800 sq ft',
     image: findImage('property-9'),
-    tags: ['Residential', 'Pre-Launch'],
+    tags: ['Residential', 'Pre-Launch', 'Swimming Pool', 'Gym', 'Security'],
+    amenities: ['Swimming Pool', 'Gym', 'Security'],
   },
   {
     id: '8',

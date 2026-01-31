@@ -10,8 +10,13 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { PropertyCard } from '@/components/property-card';
+import Autoplay from 'embla-carousel-autoplay';
 
 export function TrendingSlider() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true })
+  );
+
   return (
     <div className="relative">
       <Carousel
@@ -19,11 +24,14 @@ export function TrendingSlider() {
           align: 'start',
           loop: true,
         }}
+        plugins={[plugin.current]}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
         className="w-full"
       >
         <CarouselContent className="-ml-4">
           {properties.slice(0, 5).map((property) => (
-            <CarouselItem key={property.id} className="pl-4 basis-2/3 md:basis-1/2 lg:basis-2/5">
+            <CarouselItem key={property.id} className="pl-4 basis-full sm:basis-2/3 md:basis-1/2 lg:basis-2/5">
               <PropertyCard property={property} />
             </CarouselItem>
           ))}

@@ -152,5 +152,21 @@ export const properties: Property[] = [
     image: findImage('property-5'),
     tags: ['Swimming Pool', 'Gym', 'Clubhouse', '+3 more'],
     amenities: ['Swimming Pool', 'Gym', 'Clubhouse'],
+  },
+  {
+    id: '10',
+    title: 'HOABL Goa Retreat',
+    address: 'Goa',
+    price: '₹1.8 Cr*',
+    beds: 2,
+    baths: 2,
+    area: 1300,
+    description: 'Luxury beachside apartments in Goa offering a perfect blend of comfort and coastal living.',
+    bedsDisplay: '2-4 BHK',
+    bathsDisplay: '2-4 Baths',
+    areaDisplay: '1300-2200 sq ft',
+    image: findImage('property-10'),
+    tags: ['Beach Access', 'Swimming Pool', 'Spa', '+3 more'],
+    amenities: ['Beach Access', 'Swimming Pool', 'Spa'],
   }
 ];

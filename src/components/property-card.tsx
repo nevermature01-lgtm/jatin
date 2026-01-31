@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront, PenTool, Building2, Building, Club } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront, PenTool, Building2, Building, Club, Sparkles } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -167,6 +167,18 @@ export function PropertyCard({ property }: { property: Property }) {
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <Club className="h-4 w-4 text-accent"/>
                   <span>Clubhouse</span>
+                </div>
+              )}
+              {property.amenities.includes('Beach Access') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Waves className="h-4 w-4 text-accent"/>
+                  <span>Beach Access</span>
+                </div>
+              )}
+              {property.amenities.includes('Spa') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Sparkles className="h-4 w-4 text-accent"/>
+                  <span>Spa</span>
                 </div>
               )}
             </div>

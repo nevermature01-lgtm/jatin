@@ -49,6 +49,12 @@
       "imageHint": "commercial property"
     },
     {
+      "id": "property-10",
+      "description": "HOABL Goa Retreat",
+      "imageUrl": "/hoabl-goa-real-1iHX1P7k.jpg",
+      "imageHint": "beachside apartments"
+    },
+    {
       "id": "hero-background",
       "description": "Luxury home exterior",
       "imageUrl": "https://images.unsplash.com/photo-1743808564484-e2d1c4ab9ef6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwZXN0YXRlfGVufDB8fHx8MTc2OTg0ODIzNHww&ixlib=rb-4.1.0&q=80&w=1080",

@@ -23,9 +23,12 @@ const teamMembers: TeamMember[] = [
     email: 'info@landmarklaneestates.co.in',
   },
   {
-    name: 'Shashank Jha',
+    name: 'SHASHANK JHA',
     title: 'Senior Sales Manager',
     avatarId: 'avatar-3',
+    address: 'NX-ONE Tech Zone 4, Greater Noida, Uttar Pradesh 201318, India',
+    phone: '+91 82670 10190',
+    email: 'info@landmarklaneestates.co.in',
   },
   {
     name: 'Kirti Kiran',

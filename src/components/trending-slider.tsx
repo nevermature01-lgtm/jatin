@@ -51,7 +51,6 @@ export function TrendingSlider() {
         opts={{
           align: 'start',
           loop: true,
-          dragFree: true,
         }}
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}

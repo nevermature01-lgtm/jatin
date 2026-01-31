@@ -23,6 +23,17 @@ const findImage = (id: string) => {
 
 export const properties: Property[] = [
   {
+    id: '9',
+    title: 'HOABL Vrindavan Global',
+    address: 'Vrindavan, Mathura',
+    price: '₹1.40 Cr*',
+    beds: 0,
+    baths: 0,
+    area: 0,
+    image: findImage('property-9'),
+    tags: ['Residential'],
+  },
+  {
     id: '8',
     title: 'Premium Land Plots- Dholera SIR',
     address: 'Dholera, Gujarat',

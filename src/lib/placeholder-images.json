@@ -3,34 +3,34 @@
     {
       "id": "property-1",
       "description": "Modern villa with a pool",
-      "imageUrl": "https://images.unsplash.com/photo-1670589953903-b4e2f17a70a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk3MTYyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "mobileImageUrl": "/mob_1.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdmlsbGF8ZW58MHx8fHwxNzY5ODQ4NTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "mobileImageUrl": "https://picsum.photos/seed/prop1m/600/800",
       "imageHint": "modern villa"
     },
     {
       "id": "property-2",
       "description": "Cozy suburban house",
-      "imageUrl": "https://images.unsplash.com/photo-1721149122657-7b5440f39160?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598228723793-52759bba239c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "suburban house"
     },
     {
       "id": "property-3",
       "description": "Downtown penthouse apartment",
-      "imageUrl": "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2OTcwMDIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "mobileImageUrl": "/mob_2.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1561321698-40ae82a47b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjBhcGFydG1lbnR8ZW58MHx8fHwxNzY5ODEzMDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "mobileImageUrl": "https://picsum.photos/seed/prop3m/600/800",
       "imageHint": "luxury apartment"
     },
     {
       "id": "property-4",
       "description": "Spacious family home with garden",
-      "imageUrl": "https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTY5MjM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601758003122-53c40e686a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTg0NzMyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "family home"
     },
     {
       "id": "property-5",
       "description": "Beachfront property with ocean view",
-      "imageUrl": "/desktop_3.jpg",
-      "mobileImageUrl": "/mob_3.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTg0NjY1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "mobileImageUrl": "https://picsum.photos/seed/prop5m/600/800",
       "imageHint": "beach house"
     },
     {

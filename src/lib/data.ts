@@ -43,12 +43,12 @@ export const properties: Property[] = [
   },
   {
     id: '3',
-    title: 'Downtown Penthouse',
-    address: '789 Highrise Ave, New York, NY',
-    price: 8750000,
-    beds: 3,
-    baths: 4,
-    area: 4100,
+    title: 'Bhutani 62 Avenue',
+    address: 'Sector 62, Noida',
+    price: 5000000,
+    beds: 0,
+    baths: 0,
+    area: 1000,
     image: findImage('property-3'),
   },
   {

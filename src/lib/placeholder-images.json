@@ -3,71 +3,70 @@
     {
       "id": "property-1",
       "description": "Modern villa with a pool",
-      "imageUrl": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdmlsbGF8ZW58MHx8fHwxNzY5ODQ4NTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njk4NDg1MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "mobileImageUrl": "https://picsum.photos/seed/prop1m/600/800",
       "imageHint": "modern villa"
     },
     {
       "id": "property-2",
       "description": "Cozy suburban house",
-      "imageUrl": "https://images.unsplash.com/photo-1598228723793-52759bba239c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdWJ1cmJhbiUyMGhvdXNlfGVufDB8fHx8MTc2OTc2MTQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "suburban house"
     },
     {
       "id": "property-3",
-      "description": "Downtown penthouse apartment",
-      "imageUrl": "https://images.unsplash.com/photo-1561321698-40ae82a47b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjBhcGFydG1lbnR8ZW58MHx8fHwxNzY5ODEzMDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "mobileImageUrl": "https://picsum.photos/seed/prop3m/600/800",
-      "imageHint": "luxury apartment"
+      "description": "Bhutani 62 Avenue, Sector 62, Noida",
+      "imageUrl": "/bhutani-62-avenue-BqIGkJ7P.jpg",
+      "imageHint": "commercial property"
     },
     {
       "id": "property-4",
       "description": "Spacious family home with garden",
-      "imageUrl": "https://images.unsplash.com/photo-1601758003122-53c40e686a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTg0NzMyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc2OTg0NzMyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "family home"
     },
     {
       "id": "property-5",
       "description": "Beachfront property with ocean view",
-      "imageUrl": "https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTg0NjY1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWFjaCUyMGhvdXNlfGVufDB8fHx8MTc2OTg0NjY1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "mobileImageUrl": "https://picsum.photos/seed/prop5m/600/800",
       "imageHint": "beach house"
     },
     {
       "id": "property-6",
       "description": "Rustic cabin in the woods",
-      "imageUrl": "https://images.unsplash.com/photo-1765012684429-0f5353bfa484?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxydXN0aWMlMjBjYWJpbnxlbnwwfHx8fDE3Njk3NjY2MTR8MA&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "https://images.unsplash.com/photo-1765012684429-0f5353bfa484?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxydXN0aWMlMjBjYWJpbnxlbnwwfHx8fDE3Njk3NjY2MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rustic cabin"
     },
     {
       "id": "hero-background",
       "description": "Luxury home exterior",
-      "imageUrl": "https://images.unsplash.com/photo-1561026000-94e070de0909?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBlc3RhdGV8ZW58MHx8fHwxNzY5NzY2NjE0fDA&ixlib=rb-4.1.0&q=80&w=3840",
+      "imageUrl": "https://images.unsplash.com/photo-1743808564484-e2d1c4ab9ef6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIwZXN0YXRlfGVufDB8fHx8MTc2OTg0ODIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "mobileImageUrl": "/mob_1.jpg",
       "imageHint": "luxury estate"
     },
     {
       "id": "about-us",
       "description": "A real estate agent handing keys to a happy couple.",
-      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059ee41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbnQlMjBjb3VwbGV8ZW58MHx8fHwxNzEwOTU4NTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/about/1080/720",
       "imageHint": "couple realtor keys"
     },
     {
       "id": "journey-background",
       "description": "Row of suburban houses at dusk",
-      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdWJ1cmJhbiUyMGhvdXNlcyUyMGR1c2t8ZW58MHx8fHwxNzEwOTU4NTM1fDA&ixlib=rb-4.1.0&q=80&w=1920",
+      "imageUrl": "https://images.unsplash.com/photo-1610821941187-18b1dd7105fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdWJ1cmJhbiUyMGhvdXNlc3xlbnwwfHx8fDE3Njk3MzA2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "suburban houses"
     },
     {
       "id": "avatar-1",
       "description": "Avatar of a person",
-      "imageUrl": "https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person avatar"
     },
     {
       "id": "avatar-2",
       "description": "Avatar of a person",
-      "imageUrl": "https://images.unsplash.com/photo-1750535135645-005e250ff210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person avatar"
     },
     {

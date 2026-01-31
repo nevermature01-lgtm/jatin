@@ -56,8 +56,8 @@ export default function LeadershipPage() {
                 const animationDirection = index % 2 === 0 ? '' : '[animation-direction:reverse]';
                 
                 return (
-                  <div key={member.name} className="flex flex-col items-center text-center">
-                    <div className="relative w-40 h-40 mb-8">
+                  <div key={member.name} className="group flex flex-col items-center text-center p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 hover:shadow-2xl hover:shadow-accent/10">
+                    <div className="relative w-40 h-40 mb-6">
                         {/* Animated fluid border */}
                         <div className={cn(
                             "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,#facc15,transparent_50%),radial-gradient(circle_at_80%_20%,#f59e0b,transparent_50%)] blur-2xl opacity-90 animate-bg-pan-smoke [background-size:400%_400%] rounded-full",

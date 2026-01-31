@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { PlayCircle } from 'lucide-react';
 import type { Property } from '@/lib/data';
 import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,9 +18,6 @@ export function PropertyCard({ property }: { property: Property }) {
             data-ai-hint={property.image.imageHint}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
           />
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            <PlayCircle className="w-16 h-16 text-white/80" />
-          </div>
           {property.tags && (
             <div className="absolute top-2 left-2 flex flex-wrap gap-2">
               {property.tags.map((tag) => (

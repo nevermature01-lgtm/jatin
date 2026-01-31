@@ -19,7 +19,7 @@ export function Header() {
     { href: '/', label: 'Home' },
     { href: '/properties', label: 'Properties' },
     { href: '/about', label: 'About us' },
-    { href: '#', label: 'Leadership' },
+    { href: '/leadership', label: 'Leadership' },
   ];
 
   const countryNavLinks = [

@@ -43,14 +43,15 @@ export const properties: Property[] = [
   },
   {
     id: '8',
-    title: 'Premium Land Plots- Dholera SIR',
+    title: 'Dholera Smart City Plots',
     address: 'Dholera, Gujarat',
     price: '₹10 Lacs*',
     beds: 0,
     baths: 0,
-    area: 0,
+    area: 1000,
+    areaDisplay: '1000-5000 sq ft',
     image: findImage('property-8'),
-    tags: ['Land', 'Ready To Book'],
+    tags: ['Land', 'Smart City', 'Investment'],
   },
   {
     id: '7',

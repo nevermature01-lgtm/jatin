@@ -24,13 +24,14 @@ const findImage = (id: string) => {
 export const properties: Property[] = [
   {
     id: '1',
-    title: 'Modern Villa with Pool',
-    address: '123 Luxury Lane, Beverly Hills, CA',
-    price: 4500000,
-    beds: 5,
-    baths: 6,
-    area: 5500,
+    title: 'Bhutani Cyberpark-Office Space',
+    address: 'Noida, Sector 62',
+    price: '₹68 Lacs*',
+    beds: 0,
+    baths: 0,
+    area: 0,
     image: findImage('property-1'),
+    tags: ['Office', 'Ready To Move'],
   },
   {
     id: '2',

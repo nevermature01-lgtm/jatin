@@ -27,7 +27,7 @@ export default function AboutPage() {
       <Header />
       <main className="flex-1">
         <section
-          className="mt-12 pb-16 sm:pb-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950"
+          className="mt-24 pb-16 sm:pb-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950"
           style={{ paddingTop: '120px' }}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">

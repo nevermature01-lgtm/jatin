@@ -31,8 +31,8 @@ export function Header() {
   return (
     <header className="absolute top-0 z-50 w-screen bg-gradient-to-b from-black/60 to-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between gap-4">
-          <div className="flex items-center gap-2 md:gap-6">
+        <div className="flex h-20 items-center gap-4">
+          <div className="flex flex-1 items-center justify-start gap-2 md:gap-6">
             <Link href="/" className="flex items-center space-x-2">
               <span className="font-bold text-2xl font-headline tracking-wider text-white transition-colors">
                 LANDMARKLANE
@@ -40,7 +40,7 @@ export function Header() {
             </Link>
           </div>
 
-          <nav className="hidden flex-1 items-center justify-center space-x-8 text-sm font-medium md:flex">
+          <nav className="hidden items-center justify-center space-x-8 text-sm font-medium md:flex">
             {mainNavLinks.map(link => (
               <Link key={link.label} href={link.href} className="flex items-center text-white/80 transition-colors hover:opacity-100">
                 {link.label}
@@ -48,7 +48,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center justify-end">
+          <div className="flex flex-1 items-center justify-end">
             <Button asChild variant="outline" className="hidden rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:inline-flex">
               <Link href="#">
                 Contact us

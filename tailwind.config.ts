@@ -106,7 +106,7 @@ export default {
         },
         marquee: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
         'bg-pan-smoke': {
           '0%': { backgroundPosition: '10% 0%' },
@@ -124,7 +124,7 @@ export default {
         'fade-in': 'fade-in 1s ease-out forwards',
         'slide-up-slow': 'slide-up-slow 1s ease-out 0.2s forwards',
         'slide-up-fast': 'slide-up-fast 0.8s ease-out 0.5s forwards',
-        marquee: 'marquee 30s linear infinite',
+        marquee: 'marquee 20s linear infinite',
         'bg-pan-smoke': 'bg-pan-smoke 20s ease-in-out infinite',
         'spin-slow': 'spin 20s linear infinite',
       },

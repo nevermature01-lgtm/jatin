@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -34,8 +34,12 @@ export function PropertyCard({ property }: { property: Property }) {
         </div>
         <div className="pt-4">
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>
-          <p className="text-base text-neutral-200 mt-1 truncate">{property.title}</p>
-          <p className="text-sm text-neutral-400 truncate">{property.address}</p>
+          <p className="text-base text-neutral-200 mt-1">{property.title}</p>
+          <p className="text-sm text-neutral-400">{property.address}</p>
+
+          {property.description && (
+            <p className="text-sm text-neutral-300 mt-2">{property.description}</p>
+          )}
 
           <div className="mt-3 flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-neutral-300">
             {(property.beds > 0 || property.bedsDisplay) && (
@@ -76,6 +80,24 @@ export function PropertyCard({ property }: { property: Property }) {
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <Shield className="h-4 w-4 text-accent"/>
                   <span>Security</span>
+                </div>
+              )}
+               {property.amenities.includes('High-speed Elevators') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <ArrowUpDown className="h-4 w-4 text-accent"/>
+                  <span>High-speed Elevators</span>
+                </div>
+              )}
+              {property.amenities.includes('Central AC') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <AirVent className="h-4 w-4 text-accent"/>
+                  <span>Central AC</span>
+                </div>
+              )}
+              {property.amenities.includes('Power Backup') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Zap className="h-4 w-4 text-accent"/>
+                  <span>Power Backup</span>
                 </div>
               )}
             </div>

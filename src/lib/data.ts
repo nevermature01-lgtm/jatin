@@ -11,6 +11,7 @@ export type Property = {
   area: number; // in sqft
   image: ImagePlaceholder;
   tags?: string[];
+  description?: string;
   bedsDisplay?: string;
   bathsDisplay?: string;
   areaDisplay?: string;
@@ -61,6 +62,7 @@ export const properties: Property[] = [
     beds: 0,
     baths: 0,
     area: 500,
+    description: 'Ultra-modern commercial spaces in the heart of Noida with world-class infrastructure.',
     bedsDisplay: 'Office Space',
     bathsDisplay: 'Common',
     areaDisplay: '500-2000 sq ft',

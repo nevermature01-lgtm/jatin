@@ -184,7 +184,7 @@ export function PropertyCard({ property }: { property: Property }) {
             </div>
           )}
 
-          <Button asChild variant="outline" className="mt-auto w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
+          <Button asChild variant="outline" className="mt-6 md:mt-auto w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
             <Link href="#">
               View Details
             </Link>

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -31,6 +31,19 @@ export function Header() {
 
   return (
     <header className="absolute top-0 z-50 w-screen bg-gradient-to-b from-black/60 to-transparent">
+      {/* Top bar with contact info */}
+      <div className="hidden md:block bg-black/30 text-white/80 text-xs font-body">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-center h-8 gap-6">
+              <a href="mailto:info@landmarklaneestates.co.in" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Mail className="h-4 w-4" />
+                  <span>info@landmarklaneestates.co.in</span>
+              </a>
+              <a href="tel:+919528199631" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 95281 99631</span>
+              </a>
+          </div>
+      </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center gap-4">
           <div className="flex flex-1 items-center justify-start gap-2 md:gap-6">
@@ -91,6 +104,17 @@ export function Header() {
                           </SheetClose>
                       ))}
                     </nav>
+                    <Separator className="bg-foreground/10" />
+                    <div className="p-4 space-y-2 text-sm">
+                        <a href="mailto:info@landmarklaneestates.co.in" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
+                            <Mail className="h-4 w-4" />
+                            <span>info@landmarklaneestates.co.in</span>
+                        </a>
+                        <a href="tel:+919528199631" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
+                            <Phone className="h-4 w-4" />
+                            <span>+91 95281 99631</span>
+                        </a>
+                    </div>
                 </div>
               </SheetContent>
             </Sheet>

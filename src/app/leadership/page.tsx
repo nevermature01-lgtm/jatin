@@ -31,9 +31,12 @@ const teamMembers: TeamMember[] = [
     email: 'info@landmarklaneestates.co.in',
   },
   {
-    name: 'Kirti Kiran',
+    name: 'KIRTI KIRAN',
     title: 'HR & Management',
     avatarId: 'avatar-3',
+    address: 'NX-ONE Tech Zone 4, Greater Noida, Uttar Pradesh 201318, India',
+    phone: '+91 82173 08250',
+    email: 'info@landmarklaneestates.co.in',
   },
   {
     name: 'Ankit Kumar',

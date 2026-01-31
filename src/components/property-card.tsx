@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -101,6 +101,24 @@ export function PropertyCard({ property }: { property: Property }) {
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <Zap className="h-4 w-4 text-accent"/>
                   <span>Power Backup</span>
+                </div>
+              )}
+              {property.amenities.includes('IT Infrastructure') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Network className="h-4 w-4 text-accent"/>
+                  <span>IT Infrastructure</span>
+                </div>
+              )}
+              {property.amenities.includes('Conference Rooms') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Presentation className="h-4 w-4 text-accent"/>
+                  <span>Conference Rooms</span>
+                </div>
+              )}
+              {property.amenities.includes('Cafeteria') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Coffee className="h-4 w-4 text-accent"/>
+                  <span>Cafeteria</span>
                 </div>
               )}
             </div>

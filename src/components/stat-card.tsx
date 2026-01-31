@@ -25,12 +25,10 @@ export function StatCard({ icon: Icon, value, label, index }: StatCardProps) {
     <div className="relative w-36 h-36 sm:w-48 sm:h-48">
       
       {/* Animated fluid border */}
-      <div className="absolute inset-0 rounded-2xl overflow-hidden">
-        <div className={cn(
-          "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,theme(colors.accent),transparent_50%),radial-gradient(circle_at_80%_20%,theme(colors.accent),transparent_50%)] blur-2xl opacity-90 animate-bg-pan-smoke [background-size:400%_400%]",
+      <div className={cn(
+          "absolute -inset-8 bg-[radial-gradient(circle_at_20%_80%,#facc15,transparent_50%),radial-gradient(circle_at_80%_20%,#f59e0b,transparent_50%)] blur-2xl opacity-90 animate-bg-pan-smoke [background-size:400%_400%]",
           animationDirection
           )} style={{ animationDuration: `${15 + index * 5}s` }}/>
-      </div>
 
       {/* Glass tube container (the visible border) */}
       <div className="absolute inset-0 rounded-2xl border-2 border-white/10" />

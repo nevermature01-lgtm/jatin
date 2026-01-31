@@ -11,17 +11,21 @@ export function CircularTextLogo({ className }: { className?: string }) {
         <div className="relative w-full h-full animate-spin-slow">
             <svg viewBox="0 0 100 100" className="w-full h-full">
                 <defs>
-                <path
-                    id="circle"
-                    fill="none"
-                    d="
-                    M 50, 50
-                    m -37, 0
-                    a 37,37 0 1,1 74,0
-                    a 37,37 0 1,1 -74,0"
-                />
+                    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#facc15" />
+                        <stop offset="100%" stopColor="#f59e0b" />
+                    </linearGradient>
+                    <path
+                        id="circle"
+                        fill="none"
+                        d="
+                        M 50, 50
+                        m -37, 0
+                        a 37,37 0 1,1 74,0
+                        a 37,37 0 1,1 -74,0"
+                    />
                 </defs>
-                <text className="text-xs uppercase tracking-widest fill-current text-accent">
+                <text className="text-xs uppercase tracking-widest" fill="url(#gold-gradient)">
                 <textPath href="#circle">
                     {text}
                 </textPath>

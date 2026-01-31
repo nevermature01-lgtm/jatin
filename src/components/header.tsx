@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 export function Header() {
   const mainNavLinks = [
     { href: '/', label: 'Home' },
-    { href: '#', label: 'Properties' },
+    { href: '/properties', label: 'Properties' },
     { href: '#', label: 'About us' },
     { href: '#', label: 'Leadership' },
   ];

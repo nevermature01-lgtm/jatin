@@ -33,7 +33,7 @@ export default function LeadershipPage() {
       <main className="flex-1">
         <section
           className="bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950"
-          style={{ paddingTop: '120px', paddingBottom: '64px' }}
+          style={{ paddingTop: '160px', paddingBottom: '64px' }}
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">

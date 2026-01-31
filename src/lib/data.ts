@@ -31,7 +31,7 @@ export const properties: Property[] = [
     baths: 0,
     area: 0,
     image: findImage('property-9'),
-    tags: ['Residential'],
+    tags: ['Residential', 'Pre-Launch'],
   },
   {
     id: '8',

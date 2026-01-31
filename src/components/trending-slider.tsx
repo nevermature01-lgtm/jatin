@@ -31,12 +31,12 @@ export function TrendingSlider() {
       >
         <CarouselContent className="-ml-4">
           {properties.slice(0, 5).map((property) => (
-            <CarouselItem key={property.id} className="pl-4 basis-full sm:basis-2/3 md:basis-1/2 lg:basis-2/5">
+            <CarouselItem key={property.id} className="pl-4 basis-full sm:basis-1/2 md:basis-1/2 lg:basis-2/5">
               <PropertyCard property={property} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute -top-16 right-0 hidden items-center gap-2 md:flex">
+        <div className="absolute -top-16 right-0 flex items-center gap-2">
             <CarouselPrevious className="relative -left-0 -top-0 translate-y-0 w-10 h-10 rounded-full bg-gray-800 border-gray-700 hover:bg-gray-700 text-white" />
             <CarouselNext className="relative -right-0 -top-0 translate-y-0 w-10 h-10 rounded-full bg-gray-800 border-gray-700 hover:bg-gray-700 text-white" />
         </div>

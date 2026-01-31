@@ -7,12 +7,12 @@ const teamMembers = [
   {
     name: 'Manas Chadha',
     title: 'Founder & CEO',
-    avatarId: 'avatar-1',
+    avatarId: 'avatar-3',
   },
   {
     name: 'Shashank Jha',
     title: 'Senior Sales Manager',
-    avatarId: 'avatar-2',
+    avatarId: 'avatar-3',
   },
   {
     name: 'Kirti Kiran',
@@ -22,7 +22,7 @@ const teamMembers = [
   {
     name: 'Ankit Kumar',
     title: 'Head of Operations',
-    avatarId: 'avatar-4',
+    avatarId: 'avatar-3',
   },
 ];
 

@@ -27,6 +27,8 @@ export function Header() {
       { href: '#', label: 'Noida' },
       { href: '#', label: 'Vrindavan' },
       { href: '#', label: 'Agra' },
+      { href: '#', label: 'Ahmedabad' },
+      { href: '#', label: 'Goa' },
   ];
 
   return (

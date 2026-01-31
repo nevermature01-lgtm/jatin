@@ -5,7 +5,7 @@ export type Property = {
   id: string;
   title: string;
   address: string;
-  price: number;
+  price: number | string;
   beds: number;
   baths: number;
   area: number; // in sqft
@@ -43,9 +43,9 @@ export const properties: Property[] = [
   },
   {
     id: '3',
-    title: 'Bhutani 62 Avenue',
-    address: 'Sector 62, Noida',
-    price: 5000000,
+    title: 'Retail Shop- Bhutani 62 Avenue',
+    address: 'Noida, Sector 62',
+    price: '₹35 Lacs*',
     beds: 0,
     baths: 0,
     area: 1000,

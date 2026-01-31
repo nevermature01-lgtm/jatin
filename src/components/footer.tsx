@@ -68,7 +68,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-accent" />
-                <span>123 Luxury Avenue, Suite 100, Beverly Hills, CA 90210</span>
+                <span>Nx one T3, A-610, AMRAPALI DREAMS VALLY, GREATER NOIDA, UTTAR PRADESH 201318</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-accent" />

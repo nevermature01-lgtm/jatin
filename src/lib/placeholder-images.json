@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "property-8",
+      "description": "Premium Land Plots- Dholera SIR",
+      "imageUrl": "https://images.unsplash.com/photo-1465541064977-5a2d76b09f1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsYW5kJTIwcGxvdHxlbnwwfHx8fDE3Njk4NTMxNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "land plot"
+    },
+    {
       "id": "property-1",
       "description": "Bhutani Cyberpark-Office Space",
       "imageUrl": "/bhutani-cyberpark-BFXMFZfc.jpg",

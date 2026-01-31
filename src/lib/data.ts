@@ -23,6 +23,28 @@ const findImage = (id: string) => {
 
 export const properties: Property[] = [
   {
+    id: '8',
+    title: 'Premium Land Plots- Dholera SIR',
+    address: 'Dholera, Gujarat',
+    price: '₹10 Lacs*',
+    beds: 0,
+    baths: 0,
+    area: 0,
+    image: findImage('property-8'),
+    tags: ['Land'],
+  },
+  {
+    id: '7',
+    title: 'Retail Shop- Bhutani Cyberthum',
+    address: 'Noida, Sector 140A',
+    price: '₹35.18 Lacs*',
+    beds: 0,
+    baths: 0,
+    area: 0,
+    image: findImage('property-7'),
+    tags: ['Retail', 'Under Construction'],
+  },
+  {
     id: '1',
     title: 'Bhutani Cyberpark-Office Space',
     address: 'Noida, Sector 62',
@@ -64,17 +86,6 @@ export const properties: Property[] = [
     baths: 0,
     area: 0,
     image: findImage('property-4'),
-    tags: ['Retail', 'Under Construction'],
-  },
-  {
-    id: '7',
-    title: 'Retail Shop- Bhutani Cyberthum',
-    address: 'Noida, Sector 140A',
-    price: '₹35.18 Lacs*',
-    beds: 0,
-    baths: 0,
-    area: 0,
-    image: findImage('property-7'),
     tags: ['Retail', 'Under Construction'],
   },
   {

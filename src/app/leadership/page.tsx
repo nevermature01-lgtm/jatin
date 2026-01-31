@@ -2,12 +2,25 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
-const teamMembers = [
+type TeamMember = {
+  name: string;
+  title: string;
+  avatarId: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+};
+
+const teamMembers: TeamMember[] = [
   {
     name: 'Manas Chadha',
-    title: 'Founder & CEO',
+    title: 'CEO & Founder',
     avatarId: 'avatar-3',
+    address: 'NX-ONE Tech Zone 4, Greater Noida, Uttar Pradesh 201318, India',
+    phone: '+91 9528199631',
+    email: 'info@landmarklaneestates.co.in',
   },
   {
     name: 'Shashank Jha',
@@ -75,6 +88,22 @@ export default function LeadershipPage() {
                     </div>
                     <h3 className="text-xl font-headline text-white">{member.name}</h3>
                     <p className="text-accent">{member.title}</p>
+                    {member.address && member.phone && member.email && (
+                      <div className="mt-4 text-left space-y-2 text-sm text-neutral-300">
+                        <p className="flex items-start gap-2">
+                          <MapPin className="h-4 w-4 mt-1 text-accent flex-shrink-0" />
+                          <span>{member.address}</span>
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <Phone className="h-4 w-4 text-accent" />
+                          <a href={`tel:${member.phone.replace(/\s/g, '')}`} className="hover:text-white">{member.phone}</a>
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <Mail className="h-4 w-4 text-accent" />
+                          <a href={`mailto:${member.email}`} className="hover:text-white">{member.email}</a>
+                        </p>
+                      </div>
+                    )}
                   </div>
                 );
               })}

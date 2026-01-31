@@ -1,15 +1,12 @@
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Award, Users, CalendarCheck, TrendingUp, Check } from 'lucide-react';
 import { FaqSection } from '@/components/faq-section';
 import { WhyOurTeamStandsOut } from '@/components/why-our-team-stands-out';
 
 
 export default function AboutPage() {
-    const aboutHero = PlaceHolderImages.find(p => p.id === 'about-us');
-
     const stats = [
         { icon: Award, value: "15+", label: "Years of Excellence" },
         { icon: Users, value: "25,000+", label: "Satisfied Clients" },
@@ -55,7 +52,7 @@ export default function AboutPage() {
 
         <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="max-w-3xl mx-auto text-center">
                     <div>
                         <h2 className="text-3xl sm:text-4xl font-headline text-white mb-6">
                             Blending Modern Design and Tradition
@@ -68,18 +65,6 @@ export default function AboutPage() {
                                 Every detail is crafted with precision, ensuring you find the perfect place to call home. From luxury properties to functional spaces, LANDMARKLANE brings dreams to life, one home at a time.
                             </p>
                         </div>
-                    </div>
-                    <div className="relative aspect-[4/3] rounded-lg overflow-hidden group">
-                        {aboutHero && (
-                            <Image
-                                src={aboutHero.imageUrl}
-                                alt={aboutHero.description}
-                                fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                data-ai-hint={aboutHero.imageHint}
-                                sizes="(max-width: 1023px) 100vw, 50vw"
-                            />
-                        )}
                     </div>
                 </div>
             </div>

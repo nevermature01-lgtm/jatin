@@ -57,7 +57,7 @@ export function TrendingSlider() {
         onMouseLeave={plugin.current.reset}
         className="w-full"
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-4 items-stretch">
           {sortedProperties.slice(0, 5).map((property) => (
             <CarouselItem key={property.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-2/5">
               <PropertyCard property={property} />

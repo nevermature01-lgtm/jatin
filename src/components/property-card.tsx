@@ -8,8 +8,8 @@ import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, 
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
-    <Card className="w-full overflow-hidden border-none shadow-none bg-transparent">
-      <CardContent className="p-0">
+    <Card className="w-full h-full flex flex-col overflow-hidden border-none shadow-none bg-transparent">
+      <CardContent className="p-0 flex flex-col flex-1">
         <div className="relative group aspect-[4/3] overflow-hidden rounded-lg">
           <Image
             src={property.image.imageUrl}
@@ -32,7 +32,7 @@ export function PropertyCard({ property }: { property: Property }) {
             </div>
           )}
         </div>
-        <div className="pt-4">
+        <div className="pt-4 flex flex-col flex-1">
           <p className="text-lg font-bold text-white">{typeof property.price === 'string' ? property.price : formatInr(property.price)}</p>
           <p className="text-base text-neutral-200 mt-1">{property.title}</p>
           <p className="flex items-center gap-2 text-sm text-neutral-400 mt-1">
@@ -184,7 +184,7 @@ export function PropertyCard({ property }: { property: Property }) {
             </div>
           )}
 
-          <Button asChild variant="outline" className="mt-4 w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
+          <Button asChild variant="outline" className="mt-auto w-full rounded-md font-body text-white transition-colors border-white/30 hover:bg-white/10 bg-black/20 backdrop-blur-sm">
             <Link href="#">
               View Details
             </Link>

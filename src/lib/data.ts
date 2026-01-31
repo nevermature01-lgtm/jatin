@@ -67,6 +67,17 @@ export const properties: Property[] = [
     tags: ['Retail', 'Under Construction'],
   },
   {
+    id: '7',
+    title: 'Retail Shop- Bhutani Cyberthum',
+    address: 'Noida, Sector 140A',
+    price: '₹35.18 Lacs*',
+    beds: 0,
+    baths: 0,
+    area: 0,
+    image: findImage('property-7'),
+    tags: ['Retail', 'Under Construction'],
+  },
+  {
     id: '5',
     title: 'Office Space- Bhutani Cyberthum',
     address: 'Noida, Sector 14 0A',
@@ -86,16 +97,5 @@ export const properties: Property[] = [
     baths: 2,
     area: 2500,
     image: findImage('property-6'),
-  },
-  {
-    id: '7',
-    title: 'Retail Shop- Bhutani Cyberthum',
-    address: 'Noida, Sector 140A',
-    price: '₹35.18 Lacs*',
-    beds: 0,
-    baths: 0,
-    area: 0,
-    image: findImage('property-7'),
-    tags: ['Retail', 'Under Construction'],
   }
 ];

@@ -71,7 +71,7 @@ export function ServicesSection() {
                     Ready to Find Your<br />Dream Property?
                 </h2>
                 <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm rounded-sm px-8 py-6 text-base">
-                    <Link href="#">
+                    <Link href="/properties">
                         Explore Listings &gt;
                     </Link>
                 </Button>

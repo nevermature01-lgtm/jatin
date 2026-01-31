@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const teamMembers = [
   {
-    name: 'Aakash Sharma',
+    name: 'Manas Chadha',
     title: 'Founder & CEO',
     avatarId: 'avatar-1',
   },

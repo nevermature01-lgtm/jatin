@@ -4,7 +4,7 @@ import { formatInr } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront } from 'lucide-react';
+import { BedDouble, Bath, Ruler, Waves, Dumbbell, Shield, ArrowUpDown, AirVent, Zap, MapPin, Network, Presentation, Coffee, Store, TramFront, PenTool, Building2, Building } from 'lucide-react';
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
@@ -133,10 +133,34 @@ export function PropertyCard({ property }: { property: Property }) {
                   <span>Food Court</span>
                 </div>
               )}
-              {property.amenities.includes('Retail Spaces') && (
+              {property.amenities.includes('Retail Outlets') && (
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <Store className="h-4 w-4 text-accent"/>
-                  <span>Retail Spaces</span>
+                  <span>Retail Outlets</span>
+                </div>
+              )}
+              {property.amenities.includes('Modern Design') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <PenTool className="h-4 w-4 text-accent"/>
+                  <span>Modern Design</span>
+                </div>
+              )}
+              {property.amenities.includes('Office Spaces') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Building2 className="h-4 w-4 text-accent"/>
+                  <span>Office Spaces</span>
+                </div>
+              )}
+              {property.amenities.includes('Smart City') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Building className="h-4 w-4 text-accent"/>
+                  <span>Smart City</span>
+                </div>
+              )}
+              {property.amenities.includes('DMICDC Infrastructure') && (
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
+                  <Network className="h-4 w-4 text-accent"/>
+                  <span>DMICDC Infrastructure</span>
                 </div>
               )}
             </div>

@@ -109,15 +109,5 @@ export const properties: Property[] = [
     area: 0,
     image: findImage('property-5'),
     tags: ['Office', 'Under Construction'],
-  },
-  {
-    id: '6',
-    title: 'Secluded Rustic Cabin',
-    address: '33 Forest Path, Aspen, CO',
-    price: 2100000,
-    beds: 3,
-    baths: 2,
-    area: 2500,
-    image: findImage('property-6'),
   }
 ];

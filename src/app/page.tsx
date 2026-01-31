@@ -11,6 +11,7 @@ import { ServicesSection } from '@/components/services-section';
 import { AboutUsSection } from '@/components/about-us-section';
 import { WhyOurTeamStandsOut } from '@/components/why-our-team-stands-out';
 import { RealEstateJourneySection } from '@/components/real-estate-journey-section';
+import { FaqSection } from '@/components/faq-section';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -63,6 +64,7 @@ export default function Home() {
         <AboutUsSection />
         <WhyOurTeamStandsOut />
         <RealEstateJourneySection />
+        <FaqSection />
       </main>
       <Footer />
     </div>

@@ -36,27 +36,29 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4 font-headline">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Properties</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Services</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Contact</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Blog</Link></li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-2 gap-8 md:contents">
+            {/* Column 2: Quick Links */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4 font-headline">Quick Links</h3>
+              <ul className="space-y-3">
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Properties</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Services</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Blog</Link></li>
+              </ul>
+            </div>
 
-          {/* Column 3: Services */}
-           <div>
-            <h3 className="text-lg font-semibold text-white mb-4 font-headline">Our Services</h3>
-            <ul className="space-y-3">
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Sales</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Rentals</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Investment Consulting</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Management</Link></li>
-            </ul>
+            {/* Column 3: Services */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4 font-headline">Our Services</h3>
+              <ul className="space-y-3">
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Sales</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Rentals</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Investment Consulting</Link></li>
+                <li><Link href="#" className="text-sm hover:text-white transition-colors">Property Management</Link></li>
+              </ul>
+            </div>
           </div>
 
 

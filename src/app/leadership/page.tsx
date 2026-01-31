@@ -11,7 +11,7 @@ const teamMembers = [
   },
   {
     name: 'Shashank Jha',
-    title: 'Chief Real Estate Officer',
+    title: 'Senior Sales Manager',
     avatarId: 'avatar-2',
   },
   {

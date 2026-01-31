@@ -41,7 +41,7 @@ export function AboutUsSection() {
               ABOUT US
             </p>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline text-white mb-8">
-              Blending Modern Design and Tradition to <em className="italic">Build Your Future</em>
+              Where Trust Meets Real Estate Expertise
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base text-neutral-300 mb-10">
               <p>

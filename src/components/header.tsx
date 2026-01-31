@@ -18,7 +18,7 @@ export function Header() {
   const mainNavLinks = [
     { href: '/', label: 'Home' },
     { href: '/properties', label: 'Properties' },
-    { href: '#', label: 'About us' },
+    { href: '/about', label: 'About us' },
     { href: '#', label: 'Leadership' },
   ];
 

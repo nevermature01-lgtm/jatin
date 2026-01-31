@@ -1,7 +1,5 @@
 import { Award, Users, Briefcase } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedGridItem } from './animated-grid-item';
-import { CircularTextLogo } from './circular-text-logo';
 
 const features = [
   {
@@ -23,10 +21,12 @@ const features = [
 
 export function WhyOurTeamStandsOut() {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative overflow-visible">
-      <CircularTextLogo className="top-0 left-0 -mt-20 -ml-14 sm:-mt-11 sm:-ml-11" />
+    <section className="py-16 sm:py-24 bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
+           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
+            OUR STRENGTHS
+          </p>
           <h2 className="text-4xl sm:text-5xl font-headline text-white mb-4">
             Why Our Team Stands Out
           </h2>
@@ -37,17 +37,15 @@ export function WhyOurTeamStandsOut() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <AnimatedGridItem key={index} index={index}>
-              <Card className="mx-auto w-full md:max-w-none text-center md:h-full flex flex-col justify-center py-2 md:py-4 bg-gradient-to-br from-amber-400 to-amber-600 transition-all duration-300 hover:scale-105">
-                <CardHeader className="items-center p-0 pb-4">
-                  <div className="bg-black/10 p-3 rounded-full mb-4">
-                    <feature.icon className="w-8 h-8 text-white" />
+               <div className="h-full bg-white/5 p-8 rounded-lg border border-white/10 transition-all duration-300 hover:border-primary hover:bg-primary/10">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="bg-primary/20 p-3 rounded-lg text-primary">
+                        <feature.icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-xl font-headline text-white">{feature.title}</h3>
                   </div>
-                  <CardTitle className="text-xl font-headline text-accent-foreground">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="px-6 pt-2">
-                  <p className="text-accent-foreground text-base">{feature.description}</p>
-                </CardContent>
-              </Card>
+                  <p className="text-neutral-300">{feature.description}</p>
+              </div>
             </AnimatedGridItem>
           ))}
         </div>

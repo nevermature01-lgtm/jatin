@@ -42,6 +42,9 @@ const teamMembers: TeamMember[] = [
     name: 'Ankit Kumar',
     title: 'Head of Operations',
     avatarId: 'avatar-3',
+    address: 'NX-ONE Tech Zone 4, Greater Noida, Uttar Pradesh 201318, India',
+    phone: '+91 82173 08250',
+    email: 'info@landmarklaneestates.co.in',
   },
 ];
 

@@ -48,7 +48,7 @@ export function RealEstateJourneySection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-neutral-900 hover:bg-neutral-200 rounded-sm px-6 py-6 text-base">
-                <Link href="tel:9528199631">
+                <Link href="https://wa.me/919528199631" target="_blank" rel="noopener noreferrer">
                   Contact Us &gt;
                 </Link>
               </Button>

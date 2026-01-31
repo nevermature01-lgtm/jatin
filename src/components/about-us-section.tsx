@@ -97,7 +97,7 @@ export function AboutUsSection() {
                     Start Your Property<br />Search Now!
                 </h2>
                 <Button asChild variant="outline" className="border-white/80 text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm rounded-sm px-8 py-6 text-base">
-                    <Link href="tel:9528199631">
+                    <Link href="https://wa.me/919528199631" target="_blank" rel="noopener noreferrer">
                         Contact Us &gt;
                     </Link>
                 </Button>

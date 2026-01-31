@@ -51,7 +51,7 @@ export function Header() {
 
           <div className="flex flex-1 items-center justify-end">
             <Button asChild variant="outline" className="hidden rounded-full font-body text-white transition-colors border-white/50 hover:bg-white/10 bg-black/20 backdrop-blur-sm md:inline-flex">
-              <Link href="tel:9528199631">
+              <Link href="https://wa.me/919528199631" target="_blank" rel="noopener noreferrer">
                 Contact us
               </Link>
             </Button>

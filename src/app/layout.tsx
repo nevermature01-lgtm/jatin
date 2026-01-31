@@ -3,7 +3,7 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'LANDMARKLANE - Luxury Real Estate',
+  title: 'LANDMARKLANE',
   description: 'Find your dream luxury home with LANDMARKLANE.',
 };
 

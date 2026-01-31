@@ -2,33 +2,21 @@
 
 import React from 'react';
 
-const RibbonContent = () => {
-    const items = [
-        'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ',
-        'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ', 'LANDMARKLANE', ' • ',
-      ];
-    return (
-        <>
-            {items.map((item, index) => (
-                <span key={index} className="mx-4 text-2xl font-headline tracking-wider">
-                    {item}
-                </span>
-            ))}
-        </>
-    )
-}
-
 export function MovingRibbon() {
+  // Repeating the content to ensure it's long enough for a seamless loop
+  const text = 'LANDMARKLANE • ';
+  const content = Array(30).fill(text).join('');
+
   return (
-    <section className="w-screen bg-gradient-to-r from-amber-400 to-amber-600 text-accent-foreground py-2 overflow-hidden whitespace-nowrap">
-        <div className="flex animate-marquee">
-            <div className="flex-shrink-0 flex items-center">
-                <RibbonContent />
-            </div>
-            <div aria-hidden="true" className="flex-shrink-0 flex items-center">
-                <RibbonContent />
-            </div>
+    <section className="w-full bg-gradient-to-r from-amber-400 to-amber-600 text-accent-foreground py-2 overflow-x-hidden">
+      <div className="flex whitespace-nowrap">
+        <div className="animate-marquee py-2">
+          <span className="text-2xl font-headline tracking-wider">{content}</span>
         </div>
+        <div className="animate-marquee py-2" aria-hidden="true">
+          <span className="text-2xl font-headline tracking-wider">{content}</span>
+        </div>
+      </div>
     </section>
   );
 }

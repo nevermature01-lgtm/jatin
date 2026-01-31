@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     name: 'Kirti Kiran',
-    title: 'Head of Sales',
+    title: 'HR & Management',
     avatarId: 'avatar-3',
   },
   {

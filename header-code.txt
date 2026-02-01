@@ -43,6 +43,10 @@ export function Header() {
                   <Phone className="h-4 w-4" />
                   <span>+91 95281 99631</span>
               </a>
+              <a href="tel:+918267010190" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 82670 10190</span>
+              </a>
           </div>
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,6 +118,10 @@ export function Header() {
                         <a href="tel:+919528199631" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
                             <Phone className="h-4 w-4" />
                             <span>+91 95281 99631</span>
+                        </a>
+                        <a href="tel:+918267010190" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
+                            <Phone className="h-4 w-4" />
+                            <span>+91 82670 10190</span>
                         </a>
                     </div>
                 </div>
